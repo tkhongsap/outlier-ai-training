@@ -18,9 +18,3 @@ These scripts are intended as references or experiments. To run any of the Pytho
 ```bash
 pip install pyserial geopandas shapely
 ```
-
-Run a script with:
-```bash
-python prg-01.py
-```
-Adjust the command according to the file you wish to execute.
