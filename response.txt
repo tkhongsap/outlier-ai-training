@@ -1,0 +1,459 @@
+**เป้าหมาย**
+* สร้างไดร์เวอร์ที่ใช้ในการสื่อสารแบบอนุกรมระหว่างคอมพิวเตอร์และอุปกรณ์
+* ไม่มีปัญหาเรื่องข้อมูลชนกัน
+
+**ข้อมูลนำเข้า**
+* ข้อมูลในรูปแบบไบต์อาร์เรย์
+* ส่งผ่านการสื่อสารแบบอนุกรม
+
+**ผลลัพธ์**
+* การรับข้อมูลที่ถูกต้องผ่านการสื่อสารแบบอนุกรม
+
+**กฎการทำงานของระบบ**
+* อุปกรณ์ส่งข้อมูลหาคอมพิวเตอร์ที่ความเร็ว 10 Hz
+* คอมพืวเตอร์ส่งข้อมูลหาอุปกรณ์เมื่อใดก็ได้ และอุปกรณ์ต้องตอบรับเมื่อได้ข้อมูล
+* ถ้าคอมพิวเตอร์ไม่ได้รับข้อความตอบรับ ต้องทำการส่งซ้ำเป็นจำนวนครั้งที่จำกัด
+* การรับส่งข้อมูลไม่สูญหาย และถูกต้อง
+
+**วิธีที่ 1 : CSMA + Asyncio**
+CSMA ย่อมาจาก Carrier Sense Multiple Access เป็นเทคนิคที่ใช้ในระบบที่มีหลายอุปกรณ์แชร์ช่องสื่อสารเดียวกัน เช่น สายสัญญาณ หรือคลื่นวิทยุ โดยมีหลักการว่า "ฟังก่อนส่ง"
+อุปกรณ์จะต้อง ตรวจสอบก่อน ว่าช่องสื่อสาร (channel) ว่างอยู่ก่อนจะส่งข้อมูลออกไป
+ในโค้ดจะตรวจสอบว่ามีข้อมูลอยู่ในบัฟเฟอร์ด้วยคำสั่ง `self.transport._serial.in_waiting > 0` เพื่อให้แน่ใจว่าจะไม่มีการชนกันในขณะส่งข้อมูล
+`asyncio` คือไลบรารีใน Python ที่ช่วยให้เราสามารถเขียน โค้ดแบบ Asynchronous (ไม่บล็อก) ได้
+เนื่องจากการทำงานต้องมีการรอในหลายช่วง เช่น รออ่านข้อมูล รอเขียนข้อมูล รอรอบการทำงาน ถ้าเขียนโค้ดแบบ Synchronous (บล็อก) จะทำให้โปรแกรมช้า รับค่าไม่ทัน ตอบรับคำสั่ง (ACK) ช้าไปด้วย
+ถ้าการโค้ดแบบ Asynchronous จะช่วยให้ทำหลายอย่างพร้อมกันได้และทำให้การทำงานโดยรวมเร็วขึ้น
+มีการเพิ่มส่วนหัวและส่วนท้าย Checksum ลงในแพคเกจข้อมูล เพื่อยืนยันว่าข้อมูลไม่สูญหายก่อนนำไปใช้
+
+**ติดตั้งไลบรารี pyserial-asyncio**
+``` python
+pip install pyserial-asyncio
+```
+
+โค้ดจะแบ่งเป็น 2 ส่วน คือส่วนของคอมพิวเตอร์ และส่วนของอุปกรณ์
+**csma_pc.py**
+```python
+import asyncio
+import serial_asyncio
+
+START_BYTE = b'\x02'  # ไบต์เริ่มต้นของแพ็กเก็ต
+END_BYTE = b'\x03'    # ไบต์สิ้นสุดของแพ็กเก็ต
+
+def wrap_packet(data: bytes) -> bytes:
+    """ห่อหุ้มข้อมูลด้วยไบต์เริ่มต้น ข้อมูล Checksum และไบต์สิ้นสุด""" 
+    checksum = sum(data) % 256  # คำนวณ Checksum อย่างง่าย
+    return START_BYTE + data + bytes([checksum]) + END_BYTE
+
+class PCProtocol(asyncio.Protocol):
+    """Protocol สำหรับฝั่ง PC ในการสื่อสารแบบอนุกรม"""
+    def __init__(self):
+        self.transport = None  # ตัวจัดการการส่งผ่านข้อมูล (Serial transport)
+        self.buffer = b''      # บัฟเฟอร์สำหรับเก็บข้อมูลที่ได้รับ
+        self.ack_event = asyncio.Event()  # Event สำหรับซิงโครไนซ์การรับ ACK/NACK
+        self.last_response = None  # เก็บการตอบรับล่าสุด (ACK หรือ NACK)
+
+    def connection_made(self, transport):
+        """เรียกเมื่อมีการเชื่อมต่อ Serial สำเร็จ"""
+        print("[PC] Serial connected")
+        self.transport = transport
+
+    def data_received(self, data):
+        """เรียกเมื่อได้รับข้อมูลทาง Serial"""
+        self.buffer += data  # เพิ่มข้อมูลที่ได้รับลงในบัฟเฟอร์
+        while START_BYTE in self.buffer and END_BYTE in self.buffer:
+            start = self.buffer.find(START_BYTE)  # หาตำแหน่งไบต์เริ่มต้น
+            end = self.buffer.find(END_BYTE, start)  # หาตำแหน่งไบต์สิ้นสุด (หลังจากไบต์เริ่มต้น)
+            if end > start:  # ถ้าพบทั้งไบต์เริ่มต้นและสิ้นสุด
+                packet = self.buffer[start+1:end]  # แยกข้อมูลแพ็กเก็ต
+                self.buffer = self.buffer[end+1:]  # ลบแพ็กเก็ตที่ประมวลผลแล้วออกจากบัฟเฟอร์
+                if len(packet) < 2:  # ตรวจสอบความยาวแพ็กเก็ตขั้นต่ำ (payload + checksum)
+                    continue
+                payload, checksum = packet[:-1], packet[-1]  # แยก payload และ checksum
+                if sum(payload) % 256 == checksum:  # ตรวจสอบ Checksum
+                    if payload.startswith(b'ACK'):
+                        self.last_response = 'ACK'
+                        self.ack_event.set()  # แจ้งว่าได้รับ ACK แล้ว
+                    elif payload.startswith(b'NACK'):
+                        self.last_response = 'NACK'
+                        self.ack_event.set()  # แจ้งว่าได้รับ NACK แล้ว
+                    else:
+                        print("[PC] Data received:", payload.decode(errors='ignore'))  # แสดงข้อมูลที่ได้รับ
+                else:
+                    print("[PC] Invalid checksum")  # แจ้งว่า Checksum ไม่ถูกต้อง
+            else:
+                break  # ออกจากลูป while ถ้าไม่พบทั้งไบต์เริ่มต้นและสิ้นสุด
+
+    async def send_request_with_retry(self, command: bytes, retries=3, timeout=0.5):
+        """ส่งคำสั่งไปยังอุปกรณ์และรอการตอบรับ พร้อมลองส่งซ้ำ"""
+        packet = wrap_packet(command)  # ห่อหุ้มคำสั่งเป็นแพ็กเก็ต
+        for attempt in range(retries):  # วนลูปตามจำนวนครั้งที่ให้ลองส่งซ้ำ
+            while self.transport._serial.in_waiting > 0:
+                await asyncio.sleep(0.01)  # รอให้บัฟเฟอร์ขาเข้าว่างก่อนส่ง (CSMA)
+
+            self.transport.write(packet)  # ส่งแพ็กเก็ตคำสั่ง
+            print(f"[PC] Sent: {command}, Attempt: {attempt + 1}")
+
+            self.ack_event.clear()  # รีเซ็ต Event สำหรับรอ ACK/NACK
+            try:
+                await asyncio.wait_for(self.ack_event.wait(), timeout=timeout)  # รอ ACK/NACK พร้อม Timeout
+                if self.last_response == 'ACK':
+                    print("[PC] Got ACK")
+                    return True  # ส่งสำเร็จ ได้รับ ACK
+                else:
+                    print("[PC] Got NACK")
+            except asyncio.TimeoutError:
+                print("[PC] No ACK, retrying...")  # ไม่ได้รับการตอบรับภายในเวลาที่กำหนด
+
+        print("[PC] Request failed")  # ส่งไม่สำเร็จตามจำนวนครั้งที่กำหนด
+        return False
+
+async def pc_main():
+    """ฟังก์ชันหลักสำหรับฝั่ง PC"""
+    loop = asyncio.get_running_loop()
+    transport, protocol = await serial_asyncio.create_serial_connection(
+        loop, PCProtocol, 'COM5', baudrate=19200  # สร้างการเชื่อมต่อ Serial แบบ Asynchronous 
+    )
+
+    # Task 1: รับ sensor data ตลอดเวลา (ภายใน data_received)
+    # Task 2: ส่ง Request ทุก ๆ 5 วินาที 
+    while True:
+        await protocol.send_request_with_retry(b'READ_CONFIG')  # ส่งคำสั่ง READ_CONFIG และรอ ACK
+        await asyncio.sleep(5)  # รอ 5 วินาทีก่อนส่งคำสั่งใหม่
+
+asyncio.run(pc_main())  # รัน Event Loop
+```
+
+**csma_device.py**
+```python
+import asyncio
+import serial_asyncio
+import random
+
+START_BYTE = b'\x02'  # ไบต์เริ่มต้นของแพ็กเก็ต
+END_BYTE = b'\x03'    # ไบต์สิ้นสุดของแพ็กเก็ต
+
+def wrap_packet(data: bytes) -> bytes:
+    """ห่อหุ้มข้อมูลด้วยไบต์เริ่มต้น ข้อมูล Checksum และไบต์สิ้นสุด""" 
+    checksum = sum(data) % 256  # คำนวณ Checksum อย่างง่าย
+    return START_BYTE + data + bytes([checksum]) + END_BYTE
+
+class EdgeProtocol(asyncio.Protocol):
+    """Protocol สำหรับฝั่งอุปกรณ์ (Edge) ในการสื่อสารแบบอนุกรม"""
+    def __init__(self):
+        self.transport = None  # ตัวจัดการการส่งผ่านข้อมูล (Serial transport)
+        self.buffer = b''      # บัฟเฟอร์สำหรับเก็บข้อมูลที่ได้รับ
+
+    def connection_made(self, transport):
+        """เรียกเมื่อมีการเชื่อมต่อ Serial สำเร็จ"""
+        print("[EDGE] Serial connected")
+        self.transport = transport
+
+    def data_received(self, data):
+        """เรียกเมื่อได้รับข้อมูลทาง Serial"""
+        self.buffer += data  # เพิ่มข้อมูลที่ได้รับลงในบัฟเฟอร์
+        while START_BYTE in self.buffer and END_BYTE in self.buffer:
+            start = self.buffer.find(START_BYTE)  # หาตำแหน่งไบต์เริ่มต้น
+            end = self.buffer.find(END_BYTE, start)  # หาตำแหน่งไบต์สิ้นสุด (หลังจากไบต์เริ่มต้น)
+            if end > start:  # ถ้าพบทั้งไบต์เริ่มต้นและสิ้นสุด
+                packet = self.buffer[start+1:end]  # แยกข้อมูลแพ็กเก็ต
+                self.buffer = self.buffer[end+1:]  # ลบแพ็กเก็ตที่ประมวลผลแล้วออกจากบัฟเฟอร์
+                if len(packet) < 2:  # ตรวจสอบความยาวแพ็กเก็ตขั้นต่ำ (payload + checksum)
+                    continue
+                payload, checksum = packet[:-1], packet[-1]  # แยก payload และ checksum
+                if sum(payload) % 256 == checksum:  # ตรวจสอบ Checksum
+                    self.handle_command(payload)  # ประมวลผลคำสั่งที่ได้รับ
+                else:
+                    print("[EDGE] Invalid checksum")  # แจ้งว่า Checksum ไม่ถูกต้อง
+                    self.transport.write(wrap_packet(b'NACK'))  # ส่ง NACK กลับไป
+            else:
+                break  # ออกจากลูป while ถ้าไม่พบทั้งไบต์เริ่มต้นและสิ้นสุด
+
+    def handle_command(self, payload):
+        """ประมวลผลคำสั่งที่ได้รับจาก PC"""
+        print("[EDGE] Got command:", payload)
+        if payload == b'READ_CONFIG':
+            # ตอบ ACK เมื่อได้รับคำสั่ง READ_CONFIG
+            self.transport.write(wrap_packet(b'ACK'))
+        else:
+            # ตอบ NACK สำหรับคำสั่งที่ไม่รู้จัก
+            self.transport.write(wrap_packet(b'NACK'))
+
+    async def send_sensor_data(self):
+        """ส่งข้อมูล Sensor ไปยัง PC ทุกๆ 100ms (10Hz)"""
+        while True:
+            if self.transport:
+                value = random.randint(0, 100)  # สร้างค่า Sensor แบบสุ่ม
+                msg = f"SENSOR:{value}".encode()  # สร้างข้อความ Sensor
+                self.transport.write(wrap_packet(msg))  # ห่อหุ้มและส่งข้อมูล
+            await asyncio.sleep(0.1)  # หน่วงเวลา 100ms (10 ครั้งต่อวินาที)
+
+async def edge_main():
+    """ฟังก์ชันหลักสำหรับฝั่งอุปกรณ์ (Edge)"""
+    loop = asyncio.get_running_loop()
+    transport, protocol = await serial_asyncio.create_serial_connection(
+        loop, EdgeProtocol, 'COM6', baudrate=19200  # สร้างการเชื่อมต่อ Serial แบบ Asynchronous 
+    )
+    asyncio.create_task(protocol.send_sensor_data())  # สร้าง Task สำหรับส่งข้อมูล Sensor เป็นพื้นหลัง
+    await asyncio.Event().wait()  # รัน Event Loop ต่อไปเรื่อย ๆ 
+
+asyncio.run(edge_main())  # รัน Event Loop
+```
+**การทดสอบ**
+นี่คือขั้นตอนการทดสอบ csma_pc.py และ csma_device.py โดยใช้ com0com บน Windows
+โดยที่ com0com เป็นโปรแกรม Virtual Serial Port Software ที่รันบน Windows เป็นโปรแกรมฟรีและโอเพนซอร์ส ใช้งานง่ายและเสถียร
+ขั้นตอนที่ 1 : สร้างคู่พอร์ต Serial เสมือนด้วย com0com
+1.1 เปิด com0com - Setup : ค้นหาใน Start Menu
+1.2 เพิ่มคู่พอร์ต : คลิก "Add Port Pair" และจดจำชื่อคู่พอร์ตที่สร้างขึ้น เช่น COM5 และ COM6
+1.3 คลิก "Apply" หรือ "OK"
+ขั้นตอนที่ 2 : แก้ไขสคริปต์ csma_pc.py
+2.1 เปิดไฟล์ csma_pc.py
+2.2 เปลี่ยนบรรทัดที่กำหนดพอร์ต Serial ให้ใช้ชื่อพอร์ตเสมือนพอร์ตหนึ่ง เช่น COM5
+```Python
+transport, protocol = await serial_asyncio.create_serial_connection(
+    loop, PCProtocol, 'COM5', baudrate=19200
+)
+```
+2.3 บันทึกไฟล์
+
+ขั้นตอนที่ 3 : แก้ไขสคริปต์ csma_device.py
+
+3.1 เปิดไฟล์ csma_device.py
+3.2 เปลี่ยนบรรทัดที่กำหนดพอร์ต Serial ให้ใช้ชื่อพอร์ตเสมือนอีกพอร์ตหนึ่งในคู่เดียวกัน เช่น COM6
+``` python
+transport, protocol = await serial_asyncio.create_serial_connection(
+    loop, EdgeProtocol, 'COM6', baudrate=19200
+)
+```
+3.3 บันทึกไฟล์
+
+ขั้นตอนที่ 4 : รันสคริปต์
+4.1 เปิด Command Prompt หรือ PowerShell หน้าต่างแรก
+* นำทางไปยัง Directory ที่คุณบันทึกไฟล์ csma_device.py
+* รันสคริปต์ฝั่งอุปกรณ์
+```bash
+python csma_device.py
+```
+* คุณควรจะเห็นข้อความ [EDGE] Serial connected แสดงว่าสคริปต์กำลังรอการเชื่อมต่อ
+
+4.2 เปิด Command Prompt หรือ PowerShell หน้าต่างที่สอง
+* นำทางไปยัง Directory ที่คุณบันทึกไฟล์ csma_pc.py
+* รันสคริปต์ฝั่ง PC
+```bash
+python csma_pc.py
+```
+* คุณควรจะเห็นข้อความ [PC] Serial connected แสดงว่าสคริปต์เชื่อมต่อกับพอร์ตเสมือนแล้ว
+
+ขั้นตอนที่ 5 : สังเกตการสื่อสาร
+* หน้าต่าง csma_device.py : คุณควรจะเห็นข้อความ [EDGE] Sent data to PC: ตามด้วยข้อมูล Sensor ที่ถูกส่งไปทุก ๆ 100ms (10Hz)
+* หน้าต่าง csma_pc.py : คุณควรจะเห็นข้อความ [PC] Data received : ตามด้วยข้อมูลที่อุปกรณ์ส่งมา
+
+ขั้นตอนที่ 6 : ทดสอบการส่งคำสั่งจาก PC
+6.1 ในหน้าต่างที่รัน csma_pc.py คุณจะเห็นข้อความ ป้อนคำสั่ง (hex) หรือ Enter เพื่อรับข้อมูล
+6.2 ลองป้อนคำสั่งในรูปแบบ Hexadecimal เช่น READ_CONFIG ในรูปแบบไบต์คือ 524541445f434f4e464947 แล้วกด Enter
+6.3 สังเกตผลลัพธ์
+หน้าต่าง csma_pc.py : คุณควรจะเห็นข้อความ [PC] Sent: b'READ_CONFIG', Attempt: 1 และข้อความที่แสดงว่ารอ ACK
+หน้าต่าง csma_device.py : คุณควรจะเห็นข้อความ [EDGE] Got command : b'READ_CONFIG' และ [EDGE] Sent ACK back to PC: b'\x06'
+หน้าต่าง csma_pc.py : หากการสื่อสารสำเร็จ คุณควรจะเห็นข้อความ [PC] Got ACK
+6.4 ลองป้อนคำสั่งอื่นที่ไม่ใช่ READ_CONFIG ในฝั่ง PC เพื่อทดสอบการส่ง NACK จากฝั่งอุปกรณ์
+
+**การทดสอบการส่งซ้ำ**
+หากต้องการทดสอบการส่งซ้ำ ให้ลองปิดโปรแกรม csma_device.py เพื่อจำลองว่าอุปกรณ์ไม่ตอบสนอง
+ในหน้าต่าง csma_pc.py ป้อนคำสั่งและสังเกตว่า PC จะพยายามส่งคำสั่งซ้ำตามจำนวนครั้งที่กำหนด (3 ครั้งตามโค้ด) และสุดท้ายจะแสดงข้อความ [PC] Request failed
+
+**ข้อควรจำ**
+ตรวจสอบให้แน่ใจว่าคุณใช้ชื่อพอร์ต Serial เสมือนที่ถูกต้องตามที่คุณสร้างใน com0com ทั้งในสคริปต์ PC และสคริปต์ Device (ต้องเป็นคนละพอร์ตในคู่เดียวกัน)
+Baud rate ในทั้งสองสคริปต์ต้องตรงกัน (ตั้งไว้ที่ 19200 ในโค้ดตัวอย่าง) ทำตามขั้นตอนเหล่านี้ คุณจะสามารถทดสอบการสื่อสารระหว่างสคริปต์ csma_pc.py และ csma_device.py บน Windows โดยใช้ com0com เพื่อจำลองการเชื่อมต่อ Serial ได้ครับ
+  
+
+**วิธีที่ 2 : Time Division Duplexing (TDD Slot)**
+วิธีนี้เราจะแบ่งช่วงเวลาออกเป็นช่องเวลาชัดเจน ซึ่งจะทำให้ไม่มีการชนกันระหว่างการส่งข้อมูล 
+โดยที่
+* Edge จะส่งข้อมูลทุก ๆ 100ms แต่จะมี 80ms สำหรับการส่งข้อมูล
+* PC จะส่งข้อมูลใน 20ms ที่เหลือ
+การแบ่งเวลาเป็นช่องเวลาแบบนี้ช่วยให้ทั้งสองฝั่งสามารถส่งข้อมูลได้ในช่วงเวลาที่กำหนด โดยไม่ชนกัน
+
+**การทำงาน**
+1. อุปกรณ์ Edge (Receiver)
+* อุปกรณ์ Edge จะส่งข้อมูลทุก 100ms แต่จะมีเวลา 80ms ในการส่ง
+* เมื่อถึงเวลา 20ms ที่เหลือ PC จะมีสิทธิ์ส่งคำขอ (Request)
+* ถ้า PC ส่ง Request ก่อน 20ms หมดจะรับข้อมูลจากอุปกรณ์ Edge
+2. เครื่อง PC (Requester)
+* เครื่อง PC จะคอย “ถาม” ข้อมูลจาก Edge ทุก ๆ 20ms (Time Slot ของตัวเอง)
+* หากเครื่อง PC ต้องการส่งคำขอกลับ อุปกรณ์ Edge จะรอจนกว่าจะถึงช่วงเวลาที่เครื่อง PC ส่งได้
+การทำแบบนี้จะช่วยให้ทั้งสองฝ่ายไม่ชนกัน แต่ข้อเสียคือ Latency อาจจะสูงหากเครื่อง PC ต้องการข้อมูลทันที
+
+**tdd_pc.py**
+```python
+import serial 
+import time 
+import threading 
+ 
+ser = serial.Serial('COM5', baudrate=19200, timeout=0.1)  # กำหนดพอร์ต Serial และ Baud Rate 
+ 
+def build_packet(pkt_type, seq, payload): 
+    """สร้างแพ็กเก็ตข้อมูลพร้อมส่วนหัว ลำดับ ข้อมูล และ Checksum""" 
+    pkt = bytearray([0xAA, pkt_type, seq]) + payload  # ส่วนหัว (0xAA) ประเภทแพ็กเก็ต ลำดับ และข้อมูล 
+    pkt.append(sum(pkt) & 0xFF)  # คำนวณ Checksum อย่างง่าย (ผลรวม modulo 256) 
+    return bytes(pkt) 
+ 
+def parse_packet(data): 
+    """ตรวจสอบและแยกข้อมูลออกจากแพ็กเก็ต""" 
+    if len(data) < 4 or data[0] != 0xAA:  # ตรวจสอบความยาวขั้นต่ำและส่วนหัว 
+        return None 
+    pkt_type = data[1]  # ประเภทแพ็กเก็ต 
+    seq = data[2]     # หมายเลขลำดับ 
+    payload = data[3:-1]  # ข้อมูล 
+    crc = data[-1]    # Checksum ที่ได้รับ 
+    if sum(data[:-1]) & 0xFF != crc:  # ตรวจสอบ Checksum 
+        return None 
+    return pkt_type, seq, payload 
+ 
+def tx_worker(): 
+    """Worker thread สำหรับส่ง Request ไปยังอุปกรณ์ Edge ทุก ๆ 20ms""" 
+    seq_id = 0 
+    while True: 
+        # ขอข้อมูลจากอุปกรณ์ Edge ทุก ๆ 20ms (ส่งคำขอภายในช่วงเวลา 20 มิลลิวินาที) 
+        req_payload = f"REQ:{int(time.time()*1000)%100000}".encode()  # สร้าง payload สำหรับ Request พร้อม Timestamp 
+        req_pkt = build_packet(0x02, seq_id, req_payload)  # สร้างแพ็กเก็ต Request 
+        ser.write(req_pkt)  # ส่งแพ็กเก็ต Request 
+        print(f"[PC] Sent REQ (seq {seq_id}): {req_payload}") 
+        seq_id = (seq_id + 1) % 256  # เพิ่มหมายเลขลำดับ 
+        time.sleep(0.02)  # หน่วงเวลา 20ms (Time Slot สำหรับส่ง Request ของ PC) 
+ 
+def rx_worker(): 
+    """Worker thread สำหรับรับข้อมูลจากอุปกรณ์ Edge""" 
+    rx_buffer = bytearray() 
+    while True: 
+        if ser.in_waiting: 
+            byte = ser.read(1)  # อ่านข้อมูลทีละ 1 ไบต์ 
+            if byte: 
+                rx_buffer.append(byte[0])  # เพิ่มไบต์ที่ได้รับลงในบัฟเฟอร์ 
+                if len(rx_buffer) >= 4 and rx_buffer[0] == 0xAA:  # ตรวจสอบความยาวขั้นต่ำและส่วนหัว 
+                    pkt = parse_packet(bytes(rx_buffer))  # พยายาม Parse แพ็กเก็ต 
+                    if pkt: 
+                        pkt_type, seq, payload = pkt 
+                        if pkt_type == 0x06:  # ACK (0x06 คือประเภทแพ็กเก็ต ACK ที่อุปกรณ์ Edge ส่งมา) 
+                            print(f"[PC] Received ACK (seq {seq}): {payload}") 
+                        rx_buffer.clear()  # ล้างบัฟเฟอร์หลังจากประมวลผลแพ็กเก็ตแล้ว 
+ 
+# เริ่ม worker threads สำหรับการรับและส่งข้อมูลแบบ Non-blocking 
+threading.Thread(target=rx_worker, daemon=True).start() 
+threading.Thread(target=tx_worker, daemon=True).start() 
+ 
+while True: 
+    time.sleep(1)  # รักษา Thread หลักให้ทำงานอยู่
+```
+
+**tdd_edge.py**
+```python
+import serial 
+import time 
+import threading 
+ 
+ser = serial.Serial('COM6', baudrate=19200, timeout=0.1)  # กำหนดพอร์ต Serial และ Baud Rate 
+seq_id = 0  # ตัวแปรสำหรับเก็บหมายเลขลำดับการส่ง 
+ 
+def build_packet(pkt_type, seq, payload): 
+    """สร้างแพ็กเก็ตข้อมูลพร้อมส่วนหัว ลำดับ ข้อมูล และ Checksum""" 
+    pkt = bytearray([0xAA, pkt_type, seq]) + payload  # ส่วนหัว (0xAA) ประเภทแพ็กเก็ต ลำดับ และข้อมูล 
+    pkt.append(sum(pkt) & 0xFF)  # คำนวณ Checksum อย่างง่าย (ผลรวม modulo 256) 
+    return bytes(pkt) 
+ 
+def parse_packet(data): 
+    """ตรวจสอบและแยกข้อมูลออกจากแพ็กเก็ต""" 
+    if len(data) < 4 or data[0] != 0xAA:  # ตรวจสอบความยาวขั้นต่ำและส่วนหัว 
+        return None 
+    pkt_type = data[1]  # ประเภทแพ็กเก็ต 
+    seq = data[2]     # หมายเลขลำดับ 
+    payload = data[3:-1]  # ข้อมูล 
+    crc = data[-1]    # Checksum ที่ได้รับ 
+    if sum(data[:-1]) & 0xFF != crc:  # ตรวจสอบ Checksum 
+        return None 
+    return pkt_type, seq, payload 
+ 
+def tx_worker(): 
+    """Worker thread สำหรับส่งข้อมูล Sensor ไปยัง PC ทุก ๆ 100ms (80ms สำหรับการส่ง)""" 
+    global seq_id 
+    while True: 
+        # ส่งข้อมูลทุก ๆ 100ms (ใช้เวลาส่ง 80ms) 
+        payload = f"EDGE_DATA:{int(time.time()*1000)%100000}".encode()  # สร้าง payload ข้อมูล Sensor พร้อม Timestamp 
+        pkt = build_packet(0x01, seq_id, payload)  # สร้างแพ็กเก็ตข้อมูล Sensor (0x01 คือประเภทแพ็กเก็ต DATA) 
+        ser.write(pkt)  # ส่งแพ็กเก็ตข้อมูล 
+        print(f"[EDGE] Sent DATA (seq {seq_id}): {payload}") 
+        seq_id = (seq_id + 1) % 256  # เพิ่มหมายเลขลำดับ 
+        time.sleep(0.08)  # หน่วงเวลา 80ms (Time Slot สำหรับส่งข้อมูลของ Edge) 
+ 
+def rx_worker(): 
+    """Worker thread สำหรับรับ Request จาก PC""" 
+    global seq_id 
+    rx_buffer = bytearray() 
+    while True: 
+        if ser.in_waiting: 
+            byte = ser.read(1)  # อ่านข้อมูลทีละ 1 ไบต์ 
+            if byte: 
+                rx_buffer.append(byte[0])  # เพิ่มไบต์ที่ได้รับลงในบัฟเฟอร์ 
+                if len(rx_buffer) >= 4 and rx_buffer[0] == 0xAA:  # ตรวจสอบความยาวขั้นต่ำและส่วนหัว 
+                    pkt = parse_packet(bytes(rx_buffer))  # พยายาม Parse แพ็กเก็ต 
+                    if pkt: 
+                        pkt_type, seq, payload = pkt 
+                        if pkt_type == 0x02:  # REQ (0x02 คือประเภทแพ็กเก็ต REQ ที่ PC ส่งมา) 
+                            print(f"[EDGE] Received REQ (seq {seq}): {payload}") 
+                            ack = build_packet(0x06, seq, b'')  # สร้างแพ็กเก็ต ACK (0x06 คือประเภทแพ็กเก็ต ACK) 
+                            ser.write(ack)  # ส่งแพ็กเก็ต ACK
+```
+
+**การทดสอบ**
+นี่คือขั้นตอนการทดสอบ tdd_pc.py และ tdd_edge.py โดยใช้ com0com บน Windows
+
+ขั้นตอนที่ 1 : สร้างคู่พอร์ต Serial เสมือนด้วย com0com
+1.1 เปิด com0com - Setup : ค้นหาใน Start Menu
+1.2 เพิ่มคู่พอร์ต : คลิก "Add Port Pair" และจดจำชื่อคู่พอร์ตที่สร้างขึ้น เช่น COM5 และ COM6
+1.3 คลิก "Apply" หรือ "OK"
+
+ขั้นตอนที่ 2 : แก้ไขสคริปต์ tdd_pc.py
+2.1 เปิดไฟล์ tdd_pc.py
+2.2 เปลี่ยนบรรทัดที่กำหนดค่าพอร์ต Serial ให้ใช้ชื่อพอร์ตเสมือนพอร์ตหนึ่ง เช่น COM5
+```python
+ser = serial.Serial('COM5', baudrate=19200, timeout=0.1)   
+```
+2.3 บันทึกไฟล์
+
+ขั้นตอนที่ 3 : แก้ไขสคริปต์ tdd_edge.py
+3.1 เปิดไฟล์ tdd_edge.py
+3.2 เปลี่ยนบรรทัดที่กำหนดค่าพอร์ต Serial ให้ใช้ชื่อพอร์ตเสมือนอีกพอร์ตหนึ่งในคู่เดียวกัน เช่น COM6
+```python
+ser = serial.Serial('COM6', baudrate=19200, timeout=0.1)  
+```
+3.3 บันทึกไฟล์
+
+ขั้นตอนที่ 4 : รันสคริปต์
+4.1 เปิด Command Prompt หรือ PowerShell หน้าต่างแรก
+* นำทางไปยัง Directory ที่คุณบันทึกไฟล์ tdd_edge.py
+* รันสคริปต์ฝั่งอุปกรณ์ (Edge)
+```bash
+python tdd_edge.py
+```
+คุณควรจะเห็นข้อความ [EDGE] Opened port successfully และเริ่มเห็นข้อความ [EDGE] Sent DATA (seq ...) : ... แสดงว่าอุปกรณ์กำลังส่งข้อมูลตามช่วงเวลาที่กำหนด
+4.2 เปิด Command Prompt หรือ PowerShell หน้าต่างที่สอง
+* นำทางไปยัง Directory ที่คุณบันทึกไฟล์ tdd_pc.py
+* รันสคริปต์ฝั่ง PC
+``` bash
+python tdd_pc.py
+```
+คุณควรจะเห็นข้อความ [PC] Opened port successfully และเริ่มเห็นข้อความ [PC] Sent REQ (seq ...) : ... แสดงว่า PC กำลังส่งคำขอข้อมูลตามช่วงเวลาที่กำหนด
+
+ขั้นตอนที่ 5 : สังเกตการสื่อสาร
+* หน้าต่าง tdd_edge.py : คุณควรจะเห็นข้อความ [EDGE] Sent DATA (seq ...) : ... แสดงว่าอุปกรณ์กำลังส่งข้อมูลทุก ๆ 100ms (โดยใช้เวลาส่ง 80ms) คุณอาจเห็นข้อความ [EDGE] Received REQ (seq ...) : ... เมื่อ PC ส่งคำขอมา และ [EDGE] Sent ACK (seq ...) เมื่ออุปกรณ์ตอบรับคำขอ
+* หน้าต่าง tdd_pc.py : คุณควรจะเห็นข้อความ [PC] Sent REQ (seq ...) : ... แสดงว่า PC กำลังส่งคำขอทุกๆ 20ms คุณอาจเห็นข้อความ [PC] Received ACK (seq ...) : ... เมื่ออุปกรณ์ตอบรับคำขอ
+
+**การทดสอบการรับส่งข้อมูล**
+* สังเกตว่าทั้งสองสคริปต์มีการส่งและควรจะรับข้อมูลตามช่วงเวลาที่กำหนดโดยไม่มีข้อผิดพลาด FileNotFoundError เกิดขึ้น
+* ตรวจสอบความถี่ในการส่งข้อมูลของอุปกรณ์ ควรจะประมาณ 10 ครั้งต่อวินาที และความถี่ในการส่งคำขอของ PC ควรจะประมาณ 50 ครั้งต่อวินาที ตามที่กำหนดไว้ในโค้ด
+* เนื่องจาก TDD ทำงานโดยการแบ่งช่วงเวลา คุณจึงไม่ควรเห็นข้อผิดพลาดเกี่ยวกับการชนกันของข้อมูล
+
+**ข้อควรจำ**
+ตรวจสอบให้แน่ใจว่าคุณใช้ชื่อพอร์ต Serial เสมือนที่ถูกต้องตามที่คุณสร้างใน com0com ทั้งในสคริปต์ PC และสคริปต์ Edge (ต้องเป็นคนละพอร์ตในคู่เดียวกัน)
+Baud rate ในทั้งสองสคริปต์ต้องตรงกัน (ตั้งไว้ที่ 19200 ในโค้ดตัวอย่าง)
+ทำตามขั้นตอนเหล่านี้ คุณจะสามารถทดสอบการสื่อสารระหว่างสคริปต์ tdd_pc.py และ tdd_edge.py บน Windows โดยใช้ com0com เพื่อจำลองการเชื่อมต่อ Serial และสังเกตการทำงานตามหลักการ Time Division Duplexing ได้ครับ
+
+**ข้อสรุป**
+CSMA เป็นวิธีที่มีการตรวจสอบช่องการส่งก่อนที่จะส่งข้อมูล ช่วยลดการชนกันของข้อมูลได้มาก 
