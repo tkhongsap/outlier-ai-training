@@ -1,54 +1,60 @@
-import serial 
-import time 
-import threading 
- 
-ser = serial.Serial('COM6', baudrate=19200, timeout=0.1)  # กำหนดพอร์ต Serial และ Baud Rate 
-seq_id = 0  # ตัวแปรสำหรับเก็บหมายเลขลำดับการส่ง 
- 
-def build_packet(pkt_type, seq, payload): 
-    """สร้างแพ็กเก็ตข้อมูลพร้อมส่วนหัว ลำดับ ข้อมูล และ Checksum""" 
-    pkt = bytearray([0xAA, pkt_type, seq]) + payload  # ส่วนหัว (0xAA) ประเภทแพ็กเก็ต ลำดับ และข้อมูล 
-    pkt.append(sum(pkt) & 0xFF)  # คำนวณ Checksum อย่างง่าย (ผลรวม modulo 256) 
-    return bytes(pkt) 
- 
-def parse_packet(data): 
-    """ตรวจสอบและแยกข้อมูลออกจากแพ็กเก็ต""" 
-    if len(data) < 4 or data[0] != 0xAA:  # ตรวจสอบความยาวขั้นต่ำและส่วนหัว 
-        return None 
-    pkt_type = data[1]  # ประเภทแพ็กเก็ต 
-    seq = data[2]     # หมายเลขลำดับ 
-    payload = data[3:-1]  # ข้อมูล 
-    crc = data[-1]    # Checksum ที่ได้รับ 
-    if sum(data[:-1]) & 0xFF != crc:  # ตรวจสอบ Checksum 
-        return None 
-    return pkt_type, seq, payload 
- 
-def tx_worker(): 
-    """Worker thread สำหรับส่งข้อมูล Sensor ไปยัง PC ทุก ๆ 100ms (80ms สำหรับการส่ง)""" 
-    global seq_id 
-    while True: 
-        # ส่งข้อมูลทุก ๆ 100ms (ใช้เวลาส่ง 80ms) 
-        payload = f"EDGE_DATA:{int(time.time()*1000)%100000}".encode()  # สร้าง payload ข้อมูล Sensor พร้อม Timestamp 
-        pkt = build_packet(0x01, seq_id, payload)  # สร้างแพ็กเก็ตข้อมูล Sensor (0x01 คือประเภทแพ็กเก็ต DATA) 
-        ser.write(pkt)  # ส่งแพ็กเก็ตข้อมูล 
-        print(f"[EDGE] Sent DATA (seq {seq_id}): {payload}") 
-        seq_id = (seq_id + 1) % 256  # เพิ่มหมายเลขลำดับ 
-        time.sleep(0.08)  # หน่วงเวลา 80ms (Time Slot สำหรับส่งข้อมูลของ Edge) 
- 
-def rx_worker(): 
-    """Worker thread สำหรับรับ Request จาก PC""" 
-    global seq_id 
-    rx_buffer = bytearray() 
-    while True: 
-        if ser.in_waiting: 
-            byte = ser.read(1)  # อ่านข้อมูลทีละ 1 ไบต์ 
-            if byte: 
-                rx_buffer.append(byte[0])  # เพิ่มไบต์ที่ได้รับลงในบัฟเฟอร์ 
-                if len(rx_buffer) >= 4 and rx_buffer[0] == 0xAA:  # ตรวจสอบความยาวขั้นต่ำและส่วนหัว 
-                    pkt = parse_packet(bytes(rx_buffer))  # พยายาม Parse แพ็กเก็ต 
-                    if pkt: 
-                        pkt_type, seq, payload = pkt 
-                        if pkt_type == 0x02:  # REQ (0x02 คือประเภทแพ็กเก็ต REQ ที่ PC ส่งมา) 
-                            print(f"[EDGE] Received REQ (seq {seq}): {payload}") 
-                            ack = build_packet(0x06, seq, b'')  # สร้างแพ็กเก็ต ACK (0x06 คือประเภทแพ็กเก็ต ACK) 
-                            ser.write(ack)  # ส่งแพ็กเก็ต ACK
+import serial
+import time
+import threading
+
+ser = serial.Serial("COM6", baudrate=19200, timeout=0.1)
+seq_id = 0
+
+
+def build_packet(pkt_type: int, seq: int, payload: bytes) -> bytes:
+    """Build a packet with a simple checksum."""
+    pkt = bytearray([0xAA, pkt_type, seq]) + payload
+    pkt.append(sum(pkt) & 0xFF)
+    return bytes(pkt)
+
+
+def parse_packet(data: bytes):
+    """Return (type, seq, payload) if checksum is valid."""
+    if len(data) < 4 or data[0] != 0xAA:
+        return None
+    if sum(data[:-1]) & 0xFF != data[-1]:
+        return None
+    return data[1], data[2], data[3:-1]
+
+
+def tx_worker():
+    global seq_id
+    while True:
+        payload = f"EDGE_DATA:{int(time.time()*1000)%100000}".encode()
+        pkt = build_packet(0x01, seq_id, payload)
+        ser.write(pkt)
+        print(f"[EDGE] Sent DATA seq={seq_id} payload={payload}")
+        seq_id = (seq_id + 1) % 256
+        time.sleep(0.08)
+
+
+def rx_worker():
+    buffer = bytearray()
+    while True:
+        if ser.in_waiting:
+            byte = ser.read(1)
+            if byte:
+                buffer.append(byte[0])
+                if len(buffer) >= 4 and buffer[0] == 0xAA:
+                    pkt = parse_packet(bytes(buffer))
+                    if pkt:
+                        pkt_type, seq, payload = pkt
+                        if pkt_type == 0x02:
+                            print(f"[EDGE] Received REQ seq={seq} payload={payload}")
+                            ack = build_packet(0x06, seq, b"")
+                            ser.write(ack)
+                            print(f"[EDGE] Sent ACK seq={seq}")
+                        buffer.clear()
+        time.sleep(0.01)
+
+
+if __name__ == "__main__":
+    threading.Thread(target=rx_worker, daemon=True).start()
+    threading.Thread(target=tx_worker, daemon=True).start()
+    while True:
+        time.sleep(1)
