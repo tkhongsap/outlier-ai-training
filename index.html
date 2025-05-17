@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Editor</title>
+    <!-- React Dependencies -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Load CSS -->
+    <link rel="stylesheet" href="profile/Profile.module.css">
+    <link rel="stylesheet" href="styles/EditProfileForm.module.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- Load Components -->
+    <script type="text/babel" src="components/ProfileCard.jsx"></script>
+    <script type="text/babel" src="EditProfileForm.jsx"></script>
+    <script type="text/babel" src="ProfilePage.jsx"></script>
+    
+    <!-- Initialize App -->
+    <script type="text/babel">
+        // Set environment variable
+        window.process = {
+            env: {
+                NEXT_PUBLIC_API_BASE_URL: 'http://localhost:5000/api'
+            }
+        };
+        
+        // Render the app
+        ReactDOM.createRoot(document.getElementById('root')).render(<ProfilePage />);
+    </script>
+</body>
+</html> 
