@@ -1,0 +1,186 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Thai Localization Guidelines (th-TH)
+
+## New Update — Prompt Naturalness
+
+### Acceptable Deviations
+- **Typos / Misspellings** – they are acceptable (do **not** add them intentionally).
+- **Modern & Spoken Language** – everyday words or current slang that real Thai users might type  
+  *Examples:* `ไหม`, `ยังไง`, `ได้ไหม`, `ป่าว`, `เปล่า`
+- **Incorrect Transliterations** – popular spellings that differ from the Royal Institute standard  
+  *Examples:* `โปรเจ็กต์`, `โปรเจ็ก`, `โปรเจค`
+
+### Unacceptable Deviations
+- English sentence structure or severe errors that reveal a non-native speaker
+- Unnatural wording, odd phrases, or **full stops (.) at the end of prompts**
+
+> **Tone reminder**: keep prompts *colloquial and conversational*—not overly formal or “too friendly.”  
+> This flexibility applies **only** to user prompts. ***Your responses must still follow every localization rule.***
+
+---
+
+## CODING TERMINOLOGY — อัปเดตล่าสุด
+
+### 1. Terms that may remain in English
+- Programming languages / paradigms  
+  `C++`, `Camel case`, `Python`, `JSON`, `JavaScript`
+- File names & extensions
+- Widely-accepted technical terms  
+  > *Note*: Comments & `print` statements **must** be Thai.  
+  > Variable / function names *should* be Thai where practical.
+
+### 2. Terms that **must** be in Thai
+
+| English                | Thai                   |
+|------------------------|------------------------|
+| Algorithm              | อัลกอริทึม            |
+| Application            | แอปพลิเคชัน           |
+| Array                  | อาร์เรย์               |
+| Blog                   | บล็อก                  |
+| Browser                | เบราว์เซอร์           |
+| Bug                    | บัก                    |
+| Click                  | คลิก                   |
+| Cloud                  | คลาวด์                |
+| Code                   | โค้ด                   |
+| Computer               | คอมพิวเตอร์           |
+| Computing              | คอมพิวติง             |
+| Data                   | ข้อมูล                 |
+| Dataset                | ชุดข้อมูล              |
+| Debug                  | ดีบัก                  |
+| Digital                | ดิจิทัล               |
+| Directory              | ไดเรกทอรี             |
+| E-mail                 | อีเมล                  |
+| Edge Case              | กรณีขอบ               |
+| Electronic             | อิเล็กทรอนิกส์        |
+| Facebook               | เฟซบุ๊ก               |
+| Filter                 | ฟิลเตอร์              |
+| Function               | ฟังก์ชัน              |
+| Games                  | เกม                    |
+| Graphic                | กราฟิก                |
+| Input                  | อินพุต                 |
+| Internet               | อินเทอร์เน็ต          |
+| Lab                    | แล็บ                   |
+| Library                | ไลบรารี               |
+| Link                   | ลิงก์                  |
+| Log                    | ล็อก                   |
+| Loop                   | ลูป                    |
+| Mark up                | มาร์กอัป              |
+| Matrix                 | เมทริกซ์              |
+| Open source            | โอเพนซอร์ส            |
+| Output                 | เอาต์พุต / ผลลัพธ์     |
+| Object                 | อ็อบเจกต์             |
+| Packet                 | แพ็กเก็ต              |
+| Parameter              | พารามิเตอร์           |
+| Platform               | แพลตฟอร์ม            |
+| Post                   | โพสต์                 |
+| Program                | โปรแกรม               |
+| Project                | โปรเจกต์              |
+| Script                 | สคริปต์               |
+| Server                 | เซิร์ฟเวอร์           |
+| Smart                  | สมาร์ต                |
+| Software               | ซอฟต์แวร์            |
+| Source code            | ซอร์สโค้ด             |
+| Tag                    | แท็ก                   |
+| Test Case              | เทสเคส / กรณีทดสอบ     |
+| Update                 | อัปเดต                |
+| Upload                 | อัปโหลด               |
+| Variable               | ตัวแปร                |
+| Version                | เวอร์ชัน              |
+| Website                | เว็บไซต์              |
+
+---
+
+## 1. ใช้ภาษาเขียนแทนภาษาพูด
+```diff
+- เทอไปทำไรมาหรอ ชั้นพึ่งกินข้าวมา … ไอติม กินซะหน่อยมั้ย
++ เธอไปทำไรมาเหรอ ฉันเพิ่งกินข้าวมา … ไอติม กินสักหน่อยไหม
+````
+
+## 2. เลือกใช้และสะกดคำให้ถูกต้อง
+
+* เช็กได้ที่ *พจนานุกรมราชบัณฑิต*
+  `❌ อ่ะ, อุณภูมิ, ปฎิบัติ, คอนเสิร์ตร์` → `✅ อะ, อุณหภูมิ, ปฏิบัติ, คอนเสิร์ต`
+
+## 3. คำทับศัพท์และภาษาต่างประเทศ
+
+* **Popular transliterations** override RI standards:
+  `คาเฟ่`, `แอปเปิ้ล`, `ลาเต้`
+* Keep brand / platform names in English with correct capitalisation, *or* use the widely-known Thai form:
+
+  * `Facebook` / `เฟซบุ๊ก`
+* **Consistency is mandatory**:
+
+  ```diff
+  - ธีม… ทีม…
+  + ธีม… ธีม…   (or ทีม… ทีม…)
+  ```
+
+*(detailed sub-rules for people, places, medicine, sports, etc. remain unchanged—see original for reference).*
+
+## 4. Punctuation (เครื่องหมายวรรคตอน)
+
+* **Question mark** `?` and **exclamation mark** `!` → *never* unless the prompt explicitly asks.
+* **Colon** `:`
+
+  * Use only for dialogue, single-word leads, or explanations.
+  * Always add a space **before and after**.
+* **Comma**, **full stop**, **hyphen**, **percentage**, **slash**, **brackets**, **quotes**, **dollar sign** – see original list for precise Do’s & Don’ts.
+
+## 5. การเว้นวรรค
+
+* Space between two complete clauses, after “ว่า” (long clause), around parentheses, `ฯลฯ`, abbreviations, “เวลา … น.”, etc.
+* **Do *not*** add spaces in: company prefixes, titles + names, etc.
+
+## 6. คำซ้ำซ้อน
+
+Avoid redundant pairs: use **เช่น** / **อาทิ** / **ได้แก่** correctly.
+
+## 7. ปี พ.ศ. vs. ค.ศ.
+
+* Use **ค.ศ.** for global / Western events; **พ.ศ.** for Thai contexts.
+  *(Be consistent; don’t mix.)*
+
+## 8. เวลา / วันที่
+
+* Time: `10:30 น.`  (colon + space before น.)
+* Ranges: `เวลา 10:00-14:00 น.`
+* Date: `12 มีนาคม พ.ศ. 2567`
+
+## 9. Currency
+
+* Thai context → use *บาท*
+* International context → keep *ดอลลาร์สหรัฐ* (or original currency)
+
+## 10. Numbers
+
+* Use Arabic numerals; switch to words when no classifier follows (`ทั้งสาม`, `เราสอง`).
+
+## 11. Metric Units
+
+* Prefer metric (`กม.`, `°C`, `กก.`) unless a field-specific unit is standard.
+
+## 12. Multiple-choice Labels
+
+* Use `ก ข ค ง` *or* `1 2 3 4`, not `A B C D`.
+
+## 13. Pronouns & Gender
+
+* Use a *consistent* and appropriate pronoun set:
+  `ฉัน/คุณ` or `ดิฉัน/คุณ` or `ผม/คุณ`.
+
+## 14. Romanisation of Thai
+
+* Follow RTGS when you *must* romanise Thai sentences.
+
+---
+
+```
+
+Copy everything inside the triple-backtick block to any `.md` file and you’ll have a fully formatted Markdown version of the guidelines. Let me know if you’d like further tweaks or additional sections expanded!
+```
+
