@@ -1,0 +1,19 @@
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 05:42:36  Samples:  2905
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 3.015     CPU time: 2.922
+/   _/                      v5.0.1
+
+Profile at d:\github-repo-tkhongsap\outlier-ai-training\pyinstrument_profiler.py:64
+
+3.015 main  pyinstrument_profiler.py:58
+`- 3.015 function_under_test  pyinstrument_profiler.py:11
+   |- 2.549 heavy_calculation  pyinstrument_profiler.py:24
+   |  |- 1.351 <genexpr>  pyinstrument_profiler.py:26
+   |  `- 1.198 [self]  pyinstrument_profiler.py
+   |- 0.415 sorting_test  pyinstrument_profiler.py:29
+   |  |- 0.290 Random.randint  random.py:332
+   |  |     [4 frames hidden]  random
+   |  |- 0.072 bubble_sort  pyinstrument_profiler.py:34
+   |  `- 0.031 [self]  pyinstrument_profiler.py
+   `- 0.050 io_operations  pyinstrument_profiler.py:45
+

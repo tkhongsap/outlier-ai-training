@@ -1,0 +1,36 @@
+         10832446 function calls in 3.381 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.002    0.002    3.381    3.381 d:\github-repo-tkhongsap\outlier-ai-training\cprofile_profiler.py:11(function_under_test)
+        1    0.000    0.000    2.918    2.918 d:\github-repo-tkhongsap\outlier-ai-training\cprofile_profiler.py:17(heavy_calculation)
+        1    1.488    1.488    2.918    2.918 {built-in method builtins.sum}
+ 10000001    1.430    0.000    1.430    0.000 d:\github-repo-tkhongsap\outlier-ai-training\cprofile_profiler.py:18(<genexpr>)
+        1    0.033    0.033    0.414    0.414 d:\github-repo-tkhongsap\outlier-ai-training\cprofile_profiler.py:20(sorting_test)
+   100000    0.045    0.000    0.286    0.000 C:\Users\i1032745\AppData\Local\anaconda3\Lib\random.py:332(randint)
+   100000    0.105    0.000    0.241    0.000 C:\Users\i1032745\AppData\Local\anaconda3\Lib\random.py:291(randrange)
+   100000    0.063    0.000    0.099    0.000 C:\Users\i1032745\AppData\Local\anaconda3\Lib\random.py:242(_randbelow_with_getrandbits)
+        1    0.078    0.078    0.078    0.078 d:\github-repo-tkhongsap\outlier-ai-training\cprofile_profiler.py:23(bubble_sort)
+        1    0.005    0.005    0.046    0.046 d:\github-repo-tkhongsap\outlier-ai-training\cprofile_profiler.py:33(io_operations)
+   300000    0.037    0.000    0.037    0.000 {built-in method _operator.index}
+    10000    0.010    0.000    0.019    0.000 {method 'write' of '_io.TextIOWrapper' objects}
+   100000    0.018    0.000    0.018    0.000 {method 'bit_length' of 'int' objects}
+   102421    0.018    0.000    0.018    0.000 {method 'getrandbits' of '_random.Random' objects}
+        1    0.018    0.018    0.018    0.018 {built-in method builtins.sorted}
+    10000    0.003    0.000    0.008    0.000 C:\Users\i1032745\AppData\Local\anaconda3\Lib\encodings\cp874.py:18(encode)
+        1    0.007    0.007    0.007    0.007 {built-in method nt.remove}
+        2    0.006    0.003    0.006    0.003 {method '__exit__' of '_io._IOBase' objects}
+    10000    0.006    0.000    0.006    0.000 {built-in method _codecs.charmap_encode}
+        2    0.005    0.003    0.005    0.003 {built-in method _io.open}
+        1    0.002    0.002    0.003    0.003 {method 'read' of '_io.TextIOWrapper' objects}
+        3    0.002    0.001    0.002    0.001 {built-in method builtins.print}
+        1    0.000    0.000    0.001    0.001 C:\Users\i1032745\AppData\Local\anaconda3\Lib\encodings\cp874.py:22(decode)
+        1    0.001    0.001    0.001    0.001 {built-in method _codecs.charmap_decode}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+        1    0.000    0.000    0.000    0.000 <frozen codecs>:186(__init__)
+        1    0.000    0.000    0.000    0.000 <frozen codecs>:260(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+
+
