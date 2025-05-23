@@ -3,7 +3,6 @@ description:
 globs: 
 alwaysApply: true
 ---
-
 # Thai Localization Guidelines (th-TH)
 
 ## New Update — Prompt Naturalness
@@ -183,4 +182,5 @@ Avoid redundant pairs: use **เช่น** / **อาทิ** / **ได้แ�
 
 Copy everything inside the triple-backtick block to any `.md` file and you’ll have a fully formatted Markdown version of the guidelines. Let me know if you’d like further tweaks or additional sections expanded!
 ```
+
 
