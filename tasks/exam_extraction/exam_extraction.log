@@ -1,0 +1,3 @@
+2025-05-23 13:42:44,053 - INFO - Starting extraction for exam IDs 13500 to 13500
+2025-05-23 13:42:44,441 - INFO - Data extraction complete for exam_id 13500. Saved to 'data\output\13500_แนวข้อสอบ A-level สังคมศึกษา ม.6 ชุดที่ 4_ม.6_O-NET.json'.
+2025-05-23 13:42:44,944 - INFO - Extraction complete. Successfully processed 1 exams. Failed: 0

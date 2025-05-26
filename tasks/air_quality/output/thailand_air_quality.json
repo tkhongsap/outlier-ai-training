@@ -1,0 +1,125 @@
+{
+  "timestamp": "2025-05-23T13:24:14.111481",
+  "country": "ประเทศไทย",
+  "data_source": "จำลองข้อมูลสำหรับการทดสอบ",
+  "note": "ข้อมูลนี้เป็นการจำลองเพื่อการทดสอบโปรแกรม ไม่ใช่ข้อมูลจริง",
+  "total_stations": 8,
+  "average_AQI": 64.6,
+  "average_PM2.5": 38.5,
+  "average_PM10": 59.9,
+  "average_O3": 23.4,
+  "stations_data": [
+    {
+      "city": "กรุงเทพฯ",
+      "city_en": "Bangkok",
+      "coordinates": {
+        "latitude": 13.7563,
+        "longitude": 100.5018
+      },
+      "AQI": 88,
+      "PM2.5": 42.8,
+      "PM10": 76.2,
+      "O3": 26,
+      "timestamp": "2025-05-23 13:24:14",
+      "data_source": "จำลอง (Simulated)"
+    },
+    {
+      "city": "เชียงใหม่",
+      "city_en": "Chiang Mai",
+      "coordinates": {
+        "latitude": 18.7883,
+        "longitude": 98.9853
+      },
+      "AQI": 33,
+      "PM2.5": 25.8,
+      "PM10": 34.7,
+      "O3": 22,
+      "timestamp": "2025-05-23 13:24:14",
+      "data_source": "จำลอง (Simulated)"
+    },
+    {
+      "city": "ภูเก็ต",
+      "city_en": "Phuket",
+      "coordinates": {
+        "latitude": 7.8804,
+        "longitude": 98.3923
+      },
+      "AQI": 80,
+      "PM2.5": 52.0,
+      "PM10": 74.0,
+      "O3": 19,
+      "timestamp": "2025-05-23 13:24:14",
+      "data_source": "จำลอง (Simulated)"
+    },
+    {
+      "city": "ขอนแก่น",
+      "city_en": "Khon Kaen",
+      "coordinates": {
+        "latitude": 16.4322,
+        "longitude": 102.8236
+      },
+      "AQI": 45,
+      "PM2.5": 20.0,
+      "PM10": 25.0,
+      "O3": 17,
+      "timestamp": "2025-05-23 13:24:14",
+      "data_source": "จำลอง (Simulated)"
+    },
+    {
+      "city": "นครราชสีมา",
+      "city_en": "Nakhon Ratchasima",
+      "coordinates": {
+        "latitude": 14.9799,
+        "longitude": 102.0977
+      },
+      "AQI": 65,
+      "PM2.5": 44.0,
+      "PM10": 68.0,
+      "O3": 23,
+      "timestamp": "2025-05-23 13:24:14",
+      "data_source": "จำลอง (Simulated)"
+    },
+    {
+      "city": "หาดใหญ่",
+      "city_en": "Hat Yai",
+      "coordinates": {
+        "latitude": 7.0061,
+        "longitude": 100.4681
+      },
+      "AQI": 55,
+      "PM2.5": 36.0,
+      "PM10": 67.0,
+      "O3": 25,
+      "timestamp": "2025-05-23 13:24:14",
+      "data_source": "จำลอง (Simulated)"
+    },
+    {
+      "city": "อุดรธานี",
+      "city_en": "Udon Thani",
+      "coordinates": {
+        "latitude": 17.4138,
+        "longitude": 102.787
+      },
+      "AQI": 67,
+      "PM2.5": 44.2,
+      "PM10": 67.3,
+      "O3": 15,
+      "timestamp": "2025-05-23 13:24:14",
+      "data_source": "จำลอง (Simulated)"
+    },
+    {
+      "city": "ระยอง",
+      "city_en": "Rayong",
+      "coordinates": {
+        "latitude": 12.6868,
+        "longitude": 101.2539
+      },
+      "AQI": 84,
+      "PM2.5": 43.4,
+      "PM10": 67.1,
+      "O3": 40,
+      "timestamp": "2025-05-23 13:24:14",
+      "data_source": "จำลอง (Simulated)"
+    }
+  ]
+}

@@ -1,0 +1,2891 @@
+{
+    "metadata": {
+        "exam_id": 13500,
+        "exam_name": "แนวข้อสอบ A-level สังคมศึกษา ม.6 ชุดที่ 4",
+        "level_name": "ม.6",
+        "subject_name": "O-NET",
+        "question_count": "90"
+    },
+    "questions": [
+        {
+            "question_number": 1,
+            "question_id": 167103,
+            "question_text": "<p>ข้อใดคือวิถีความเชื่อของศาสนาพุทธที่มีความแตกต่างจากศาสนาอิสลาม</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>การถืออดอาหาร</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>การให้</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>การเดินทางไปแสวงบุญ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>การอธิษฐาน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>การเคารพสักการะรูปปั้น ภาพถ่าย เหรียญ ฯลฯ</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 2,
+            "question_id": 167104,
+            "question_text": "<p>หลักธรรมใดไม่ได้เกิดขึ้นเนื่องในวันสำคัญของพุทธศาสนา: วันมาฆบูชา</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ทำความดี</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ทำจิตใจให้บริสุทธิ์</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ละเว้นความชั่ว</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ไตรลักษณ์</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>อกุศลกรรมบถ ๑๐</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 3,
+            "question_id": 167105,
+            "question_text": "<p>&ldquo;ปกรณ์ เป็นคนขยัน เลี้ยงชีพด้วยความซื่อสัตย์ สุจริต และมีความตั้งใจที่จะไม่ยุ่งเกี่ยวอบายมุขทุกชนิด&rdquo; จากคำกล่าวนี้แสดงว่าปกรณ์ ยึดมั่นในหลักธรรม มรรค ๘ ข้อใดบ้าง</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>สัมมาสติ สัมมาวายามะ สัมมากัมมันตะ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>สัมมาอาชีวะ สัมมาวายามะ สัมมาสังกัปปะ</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>สัมมาอาชีวะ สัมมาสังกัปปะ สัมมากัมมันตะ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>สัมมาทิฎฐิ สัมมาสังกัปปะ สัมมากัมมันตะ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>สัมมากัมมันตะ สัมมาสติ สัมมาทิฎฐิ</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 4,
+            "question_id": 167106,
+            "question_text": "<p>ผู้หญิงศาสนาอื่น ถ้าเข้าพิธีแต่งงานกับชายที่นับถืออิสลาม โดยจำเป็นต้องเปลี่ยนศาสนาเพื่อเข้ารับเป็นอิสลามด้วย ข้อใดต่อไปมิใช้สิ่งที่ควรปฎิบัติตอนที่ผู้หญิงเข้าเป็นอิสลามแล้ว</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>การทำคิตาน</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ศึกษาการอ่านกุรอาน ภาษาหรับ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ปฏิญาณตนว่าไม่เคารพพระเจ้าอื่นใด นอกจากอัลลอฮฺ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>อาบน้ำสุนนะฮฺ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ให้แต่งกายปกปิด เปิดได้เฉพาะใบหน้าและฝ่ามือ</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 5,
+            "question_id": 167107,
+            "question_text": "<p>ในศาสนาคริสต์ถือว่าการต้องเข้ารับศีลสารภาพบาป ต้องมีการกระทำอยู่ใน 3 กลุ่มใหญ่ๆได้แก่บาปที่ทำผิดกับพระเจ้า บาปที่ทำผิดกับคนใกล้ชิด และบาปที่ทำผิดเกี่ยวกับตนเอง และข้อใดต่อไปนี้คือ <u>บาปที่ทำผิดเกี่ยวกับตนเอง</u></p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>หัวเราะโดยไม่มีสาเหตุ</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>การไม่ตั้งใจทำงานในที่ทำงานของตน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ความคิดที่จะฆ่าตัวตาย</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>การใช้เวลาว่างโดยเปล่าประโยชน์ในการดูทีวี</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>การฆ่าลูกในท้องตนเอง (ทำแท้ง)</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 6,
+            "question_id": 167108,
+            "question_text": "<p>ความเชื่อใดของศาสนาอิสลามและศาสนาคริสต์ต่อไปนี้ที่มีจุดร่วมเหมือนกันแต่รายละเอียดในการปฎิบัติค่อนข้างแตกต่างกันมากที่สุด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>เป้าหมายสูงสุดการได้ไปอยู่กับพระผู้เป็นเจ้า</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>การเสียสละทำทาน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ความรักความเมตตา</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>การทำความดีละเว้นความชั่ว</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ข้อ 1, 2 และ 4</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 7,
+            "question_id": 167109,
+            "question_text": "<p>การเป็นศาสนิกชนที่ดีต้องมีการบำเพ็ญตนให้เป็นประโยชน์ต่อครอบครัวด้วยหลักธรรมใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ฆราวาสธรรม ๔</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>พละ ๕</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>อุบาสกธรรม ๕</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>สาราณียธรรม 6</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>อธิปไตย 3</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 8,
+            "question_id": 167110,
+            "question_text": "<p>สุภาษิต คำพังเพยใดต่อไปนี้สะท้อนให้เห็นถึงในหลักธรรม อุปาทาน ๔ แปลว่า ความยึดมั่นถือมั่น ในอัตตวาทุปาทาน กามุปาทาน ทิฏฐุปาทาน สีลพัตตุปาทาน แต่ยกเว้นข้อใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>เสียทองเท่าหัวไม่ยอมเสียผัวให้ใคร</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ถ่านไฟเก่า</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ทำบุญสูญเปล่าไหว้เจ้าดีกว่า</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ตาบอดได้แว่น</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>มือถือสากปากถือศีล</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 9,
+            "question_id": 167111,
+            "question_text": "<p>ข้อใดกล่าวถูกต้องในเรื่องของอริยสัจ ๔</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>การพลัดพรากจากสิ่งอันเป็นที่รักเป็นทุกข์</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ความอยากมีอยากได้อยากเป็นคือสมุหทัย</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>มีชีวิตแล้วมีความทุกข์ ถ้าอยากจะดับทุกข์ต้องดับชีวิต</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ควรปฎิบัติมรรคเสียก่อนจึงจะพบนิโรธ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ข้อ 1, 2, และ 4 กล่าวถูกต้องทั้งหมด</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 10,
+            "question_id": 167112,
+            "question_text": "<p>อิณาทานํ ทุกฺขํ โลเก&nbsp; แปลจากภาษาบาลีเป็นภาษาไทยว่า</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>การเป็นหนี้เป็นทุกข์ในโลก</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>การแบกโลกไว้ทำให้ทุกข์</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>การทำทาน ทำให้สบายใจ ปราศจากความทุกข์</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>การไม่เป็นหนี้ทำให้ไม่เป็นทุกข์</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>การทำทานโดยให้ธรรมมะ ทำให้เจริญ</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 11,
+            "question_id": 167113,
+            "question_text": "<p>องค์การสหประชาชาติ ประกาศ วันสันติภาพโลก ว่าคือวันอะไรซึ่งมีความสำคัญต่อพุทธศาสนาและมอบรางวัลนี้ด้วยเหตุผลใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>วันวิสาขบูชา เนื่องจากเป็นวันประสูติ ตรัสรู้ และปรินิพพานของพระพุทธเจ้า</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>วันมาฆบูชา เนื่องจากเป็นวันแสดงโอวาทปาติโมกข์ขององค์พระสัมมาสัมพุทธเจ้า</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>วันวิสาขบูชา เนื่องจากพระสัมมาสัมพุทธเจ้าเปิดโอกาสให้ทุกศาสนาสามารถเข้ามาศึกษาพุทธศาสนา เพื่อพิสูจน์หาข้อเท็จจริงได้โดยไม่จำเป็นต้องเปลี่ยนมานับถือศาสนาพุทธ และทรงสั่งสอนทุกคนโดยใช้ปัญญาธิคุณ โดยไม่คิดค่าตอบแทน</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>วันอาสาฬหบูชา เนื่องจากเป็นวันที่พระสัมมาสัมพุทธเจ้าได้ทรงแสดงธรรมเทศนา หรือหลักธรรมที่ทรงตรัสรู้เป็นครั้งแรก</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>วันมาฆบูชา เนื่องจากเป็นวันจาตุรงคสันนิบาตจึงหมายความว่า &quot;การประชุมด้วยองค์ ๔&quot;โดยสงฆ์มาประชุมกันอย่างอัศจรรย์และพระสัมมาสัมพุทธเจ้าเปิดโอกาสให้ทุกศาสนาสามารถเข้ามาศึกษาพุทธศาสนา เพื่อพิสูจน์หาข้อเท็จจริงได้โดยไม่จำเป็นต้องเปลี่ยนมานับถือศาสนาพุทธ และทรงสั่งสอนทุกคนโดยใช้ปัญญาธิคุณ โดยไม่คิดค่าตอบแทน</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 12,
+            "question_id": 167114,
+            "question_text": "<p>เปรมพนา เป็นพุทธศาสนิกชนที่มีความลังเลสงสัยว่าธรรมะของพระพุทธเจ้านั้นจะดับทุกข์ได้จริงหรือไม่ จากพฤติกรรมของเปรมพนาแสดงว่าเขามีความบกพร่องสอดคล้องกับหลักธรรมใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>นิวรณ์ ๕: พยาบาท</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>นิวรณ์ ๕: ถีนมิทธะ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>นิวรณ์ ๕: วิจิกิจฉา</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>วิตก ๓ : วิหิงสาวิตก</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>นิวรณ์ ๕: อุทธัจจกุกกุจจะ</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 13,
+            "question_id": 167115,
+            "question_text": "<p>หลักธรรมใดไม่ปรากฎอยู่ในมงคล ๓๘ ประการ</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ฟังธรรมตามกาล</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>มีความรอบรู้ในพุทธศาสน์</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ความเป็นพหูสูต</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>สงเคราะห์บุตร</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>สำรวมจากการดื่มน้ำเมา</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 14,
+            "question_id": 167116,
+            "question_text": "<p>พระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช ทรงได้รับการยกย่องว่าท่านทรงงานด้วยความไม่ย่อท้อ เสด็จขึ้นเขาลงห้วยไปเยี่ยมราษฎร์ที่ห่างไกล แม้กับผู้ร่วมงานข้าราชการที่ตามเสด็จ ท่านก็ไม่เคยกริ้วในยามที่ผู้ร่วมงานยังทำงานได้ไม่ดี อีกทั้งเมื่อพบเจอผู้ใหญ่ที่มีอายุมากกว่าท่านก็ทรงให้การเคารพโดยไม่ถือตัวว่าทรงเป็นกษัตริย์ จากคำกล่าวทั้งหมดแสดงว่าท่านทรงมีหลักธรรมในเรื่อง ทศพิธราชธรรมข้อใดบ้าง</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>อวิหิงสา บริจาค อาชวะ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>บริจาค อาชวะ มัททวะ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>อักโกธะ ขันติ มัททวะ</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>อักโกธะ ขันติ อาชวะ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>อวิหิงสา มัททวะ อาชวะ</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 15,
+            "question_id": 167117,
+            "question_text": "<p>คุณลักษณะต่อไปนี้ข้อใดเป็นของ พระอนุรุทธะ</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>กิริยามารยาท น่าเลื่อมใส</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>มีศรัทธาในการบูชาพระพุทธเจ้า</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ผู้มีทิพยจักษุญาณ</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>เก่งด้านการแพทย์</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>เก่งด้านธรรมกถึก(ผู้แสดงธรรม)</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 16,
+            "question_id": 167118,
+            "question_text": "<p>ใครคือผู้ที่ได้รับยกย่องจากองค์การยูเนสโกว่าเป็นบุคคลสำคัญของโลกด้านการศึกษาศาสนา วัฒนธรรม และสันติภาพ</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>พระพรหมมังคลาจารย์&nbsp; (ปัญญานันทภิกขุ)</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ท่านพุทธทาสภิกขุ (พระธรรมโกศาจารย์)</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>พระพรหมคุณาภรณ์ (ป.อ.ปยุตโต)</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ดร.เอ็มเบดการ์</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>พระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 17,
+            "question_id": 167119,
+            "question_text": "<p>นายป้อมไปจ้างบริษัทแห่งหนึ่งที่ผู้จัดการเป็นเพื่อนกันให้ผลิตนาฬิกาแบตเตอรี่แสงอาทิตย์เพื่อส่งออกไปต่างประเทศ ต่อมาหลังจากสินค้าวางจำหน่ายพบว่า แบตเตอรี่เสื่อมคุณภาพเร็วกว่ากำหนด ผู้ซื้อจึงร้องเรียนมาที่นายป้อมผู้ว่าจ้างและผู้ขาย จากกรณีนี้ ถ้าเป็นไปตามกฎหมายคุ้มครองผู้บริโภค ลูกค้าที่ซื้อไปจะสามารถใช้สิทธิใดได้บ้าง</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>สิทธิจะได้รับการขอโทษและชี้แจงจากผู้ขาย</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>สิทธิในการได้อิสระในการเปลี่ยนสินค้าและบริการ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>สิทธิในการได้รับการลดหย่อนภาษีจากการบริโภคสินค้าหรือบริการ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>สิทธิที่จากการที่จะได้รับการพิจารณาและเยียวยาความเสียหาย</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ข้อ 2 และ 4 ถูกต้อง</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 18,
+            "question_id": 167120,
+            "question_text": "<p>ในกฎหมายการรับราชการทหาร บุคคลดังต่อไปนี้ เมื่อลงบัญชีทหารกองเกินแล้วจะไม่ถูกเรียกมาตรวจเลือกเข้ารับราชการทหารกองประจำการในยามปกติ ยกเว้นคนใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>พระภิกษุ สามเณร และนักบวชในพระพุทธศาสนาแห่งนิกายจีนหรือญวน ซึ่งเป็นนักธรรมตามที่กระทรวงศึกษาธิการรับรอง</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ครูซึ่งประจำทำการสอนหนังสือหรือวิชาการต่าง ๆ ที่อยู่ในความควบคุมของกระทรวง</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>นักศึกษาของศูนย์ฝึกการบินพลเรือนของกระทรวงคมนาคม</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>บุคคลซึ่งได้สัญชาติไทยโดยการแปลงสัญชาติ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>นักบวชศาสนาอื่นซึ่งมีหน้าที่ประจำในกิจของศาสนาตามที่กำหนดในกฎกระทรวง</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 19,
+            "question_id": 167121,
+            "question_text": "<p>ข้อใดกล่าวถูกต้องเกี่ยวกับกฎหมายการกู้ยืมเงิน</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>กู้ยืมกัน <u>ไม่เกิน 2</u><u>,000 บาท</u> ไม่ต้องทำหลักฐานก็สามารถฟ้องร้องกันได้เมื่อเกิดการผิดข้อตกลงหรือผิดสัญญา</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>กู้ยืมกัน <u>ไม่เกิน 2</u><u>,000 บาท</u> ไม่ต้องทำหลักฐานก็ได้แต่ไม่สามารถฟ้องร้องกันได้เมื่อเกิดการผิดข้อตกลงหรือผิดสัญญา</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>กู้ยืมกัน <u>เกิน </u><u>5,000 บาท</u> ต้องทำหลักฐานเพื่อจะสามารถฟ้องร้องกันได้เมื่อเกิดการผิดข้อตกลงหรือผิดสัญญา</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>กู้ยืมกัน <u>เกิน 2</u><u>,000 บาท</u> ไม่ต้องทำหลักฐานก็สามารถฟ้องร้องกันได้เมื่อเกิดการผิดข้อตกลงหรือผิดสัญญา</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>กรณีลงลายพิมพ์นิ้วมือจะต้องมีพยานรับรองลายนิ้วมือ 3 คน</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 20,
+            "question_id": 167122,
+            "question_text": "<p>การจำนองกับจำนำนั้น มีความแตกต่างกันอย่างไร</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>การจำนอง ผู้จํานองไม่ต้องส่งมอบทรัพย์สินให้แก่ผู้รับจำนอง แต่การจำนำ ผู้จำนำต้องส่งมอบทรัพย์สินให้แก่ผู้รับจำนำ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>การรับจำนำ เมื่อหนี้ถึงกําหนดชําระแล้วและลูกหนี้ไม่ชําระหนี้นั้น เจ้าหนี้ก็มีสิทธิที่จะนําเอาทรัพย์สินที่จํานําไว้นั้นออกขายทอดตลาดได้เอง โดยไม่จําเป็นต้องอาศัยคําสั่งศาล</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ผู้จํานําต้องส่งมอบทรัพย์สินที่จํานําให้แก่ผู้รับจํานําภายหลังจากทำสัญญาภายใน 1 เดือน ส่วนผู้จำนองจะไม่ต้องส่งมอบทรัพย์สินให้ผู้รับจำนอง</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>การรับจำนอง เมื่อหนี้ถึงกําหนดชําระแล้วและลูกหนี้ไม่ชําระหนี้นั้น เจ้าหนี้ก็มีสิทธิที่จะนําเอาทรัพย์สินที่จํานองไว้นั้นออกขายทอดตลาดได้เอง โดยไม่จําเป็นต้องอาศัยคําสั่งศาล ส่วนการจำนำจะนําเอาทรัพย์สินที่จํานําไว้นั้นออกขายทอดตลาดเองไม่ได้ ต้องอาศัยคําสั่งศาล</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ข้อ 1 และ 2 ถูกต้อง</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 21,
+            "question_id": 167123,
+            "question_text": "<p>ข้อใดมิใช่หลักของการจัดเก็บภาษีอากรที่ดี</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ความแน่นอน และชัดเจนในวิธีปฏิบัติจัดเก็บ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>เป็นภาษีอากรควรมีฐานแคบ จำกัดเฉพาะกลุ่มคนมีฐานะ</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>การกำหนดอัตราภาษีที่ใช้ไม่มีลักษณะก้าวหน้ามากเกินไป</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>เสียค่าใช้จ่ายในการจัดเก็บน้อยที่สุด</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>มีความเป็นกลางทางเศรษฐกิจ</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 22,
+            "question_id": 167124,
+            "question_text": "<p>ข้อใดเข้าข่ายความผิดเฉพาะ กฎหมายอาญา เท่านั้น</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>นายเฉก ยิงปืนแก๊ปขึ้นฟ้าในที่สาธารณะ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>นายปุย เอานาฬิกาไปจำนำเพื่อนแล้วผิดนัดชำระหนี้</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>นายปราม เข้าป่าล่าสัตว์สงวนในเขตหวงห้าม</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>นายติ่งโกงเงินบริษัทเป็นจำนวนหลายร้อยล้านบาท</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ข้อ 1 และข้อ 3 ถูกต้อง</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 23,
+            "question_id": 167125,
+            "question_text": "<p>ข้อใดไม่เข้าหลักเกณฑ์ของการเป็นคนเสมือนไร้ความสามารถตามกฎหมายว่าด้วยลักษณะบุคคล</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>นางไก่ เป็นคนหูหนวก อาการนี้เกิดขึ้นภายหลังอายุ 20 ปี</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>นางหมูมีจิตฟั่นเฟือนไม่สมประกอบยังมีความคิดคำนึงอยู่บ้าง และสามารถทำกิจกรรมหลายอย่างได้ด้วยตนเอง</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>นายกุ้งใช้จ่ายเงินเกินกว่าฐานะอยู่เป็นประจำ ซึ่งทำให้ทรัพย์สมบัติร่อยหรอลงไปทุกวัน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>นายหมึกติดสุรายาเมาทุกวันจนทำให้ร่างกายอ่อนแอ ไม่ค่อยทำงานทำการ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>นายหอย ติดไวน์จนขาดไม่ได้ต้องกินทุกวัน แต่สามารถทำงานทำการได้</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 24,
+            "question_id": 167126,
+            "question_text": "<p>ข้อต่อไปนี้คือข้อกำหนดของกฎหมายการเช่าทรัพย์ ยกเว้นข้อใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>การเช่าอสังหาริมทรัพย์ จะต้องมีหลักฐานเป็นหนังสือลงลายมือชื่อฝ่ายที่ต้องรับผิด มิฉะนั้นจะฟ้องร้องกันไม่ได้</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>กำหนดเวลาในการเช่าอสังหาริมทรัพย์จะต้องไม่เกิน 30 ปี</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ผู้เช่าจะนำทรัพย์สินที่เช่าไปนั้นไปให้ผู้อื่นเช่าช่วงต่อไม่ได้</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ผู้เช่าจะทำการดัดแปลงหรือต่อเติมทรัพย์สินที่เช่านั้นมิได้</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>การเช่าทรัพย์นั้น ผู้ให้เช่าจำเป็นต้องเป็นเจ้าของทรัพย์สินที่เช่า</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 25,
+            "question_id": 167127,
+            "question_text": "<p>ในยามเกิดสงครามระหว่างประเทศ มีข้อยกเว้นห้ามทำร้ายคนที่วางอาวุธนั้น จากคำกล่าวนี้เข้าข่ายของกฎหมายใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>กฎหมายมนุษยธรรมระหว่างประเทศ</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>กฎหมายสิทธิมนุษยชน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>กฎหมายอาญา</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>กฎหมายทหาร</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ข้อ 1 และ 3</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 26,
+            "question_id": 167128,
+            "question_text": "<p>อะไรคือเกณฑ์ในการกำหนดความแตกต่างของการจัดตั้งเทศบาลในแต่ละระดับไม่ว่าจะเป็นเทศตำบล เทศบาลเมือง เทศบาลนคร</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>จำนวนของประชากรที่อาศัยอยู่ในพื้นที่นั้นมีความต่างกัน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ความหนาแน่นของประชากรที่อาศัยอยู่ในพื้นที่นั้นมีความต่างกัน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>รายได้เฉลี่ยของคนในพื้นที่นั้นมีความต่างกัน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ความเจริญทางเศรษฐกิจของคนในพื้นที่นั้นมีความต่างกัน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ถูกเฉพาะข้อ 1 และ 2</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 27,
+            "question_id": 167129,
+            "question_text": "<p>ข้อใดกล่าวถูกต้องหน้าที่และความรับผิดชอบของศาลปกครอง</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ชี้ขาดคดีพิพาทที่เกิดระหว่างหน่วยงานทางปกครองหรือเจ้าหน้าที่ของรัฐกับเอกชน</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ชี้ขาดคดีพิพาทที่เกิดระหว่างเจ้าหน้าที่ของรัฐด้วยกันเองมิได้</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>เป็นองค์กรที่ใช้อำนาจตุลาการลักษณะพิเศษต่างกับศาลยุติธรรม</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>เป็นองค์กรอิสระ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>มีเขตอำนาจ 3 ศาลคือ ศาลปกครองชั้นต้น ศาลปกครองชั้นกลาง และ ศาลปกครองสูงสุด</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 28,
+            "question_id": 167130,
+            "question_text": "<p>ข้อต่อไปนี้กล่าวถูกต้องเกี่ยวกับผู้เยาว์ยกเว้นข้อใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>การโอนที่ดินให้ผู้เยาว์สามารถให้ผู้เยาว์โอนคืนได้</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>การทำพินัยกรรมนั้นผู้เยาว์จะทำได้เมื่ออายุครบ 15 ปี บริบูรณ์แล้วเท่านั้น</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>สามารถรับงานแสดงหนังได้</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ถ้าอายุไม่ถึง 17 ปี ถ้าจะสมรสจะต้องได้รับคำสั่งศาล</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ไม่สามารถทำการซื้อรถยนต์ได้</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 29,
+            "question_id": 167131,
+            "question_text": "<p>การแสวงหาข้อเท็จจริงเมื่อเห็นว่ามีผู้ได้รับความเดือดร้อนหรือความไม่เป็นธรรมอันเนื่องมาจาก การไม่ปฏิบัติตามกฎหมายหรือปฏิบัตินอกเหนือหน้าที่และอํานาจตามกฎหมายของหน่วยงานของรัฐ หรือเจ้าหน้าที่ของรัฐ เป็นของหน่วยงานใดต่อไปนี้</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>คณะกรรมการป้องกันและปราบปรามการทุจริตแห่งชาติ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>สำนักนายกรัฐมนตรี</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ผู้ตรวจการแผ่นดิน</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>องค์กรอัยการ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>คณะกรรมการสิทธิมนุษยชนแห่งชาติ</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 30,
+            "question_id": 167132,
+            "question_text": "<p>บุคคลใดต่อไปนี้ที่เสียประโยชน์จากการเก็บภาษีที่ดินและสิ่งก่อสร้างประจำปี 2560 มากที่สุด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>นายมั่งมีบ้านหลังเดียว ราคาสี่สิบล้าน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>นายมี ซื้อที่ดินมาถูกแต่ราคาขายที่ดินในพื้นที่นั้นค่อนข้างสูง เขาจึงยังไม่ขายเพื่อเก็งกำไรจึงมีที่ดินรกร้างมากอยู่ในความครอบครอง มาห้าปีแล้ว</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>นายศรีมีคอนโดหลังที่สองติดริมทะเล ราคาห้าล้านบาท</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>นายสุข มีที่ดินใช้ในการทำเกษตรกรรม มูลค่าที่ดินสี่สิบล้านบาท</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>นายใจ มีบ้านให้เช่า มูลค่ายี่สิบห้าล้านบาท</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 31,
+            "question_id": 167133,
+            "question_text": "<p>ข้อใดมิใช่ความผิดมูลฐานที่เกี่ยวข้องกับการฟอกเงิน ตามพระราชบัญญัติป้องกันและปราบปรามการฟอกเงิน พ.ศ. 2542</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ความผิดเกี่ยวกับยาเสพติด</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ความผิดเกี่ยวกับเพศ(การค้าประเวณีหญิงและเด็ก)</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ความผิดเกี่ยวกับการฉ้อโกงประชาชน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ความผิดเกี่ยวกับการรับของโจร</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ความผิดเกี่ยวกับการก่อการร้าย</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 32,
+            "question_id": 167134,
+            "question_text": "<p>บุคคลใดต่อไปขึ้นขึ้นชื่อว่าเป็นบุคคลล้มละลาย</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>บุญช่วยมีหนี้สินล้นพ้นตัว เกินกว่า 800,000 บาท</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>บุญธรรม สามารถทำนิติกรรมสัญญาใด ๆ ได้</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>บุญชอบทำบัญชีครัวเรือนรับ-จ่ายส่งต่อหัวหน้ากองทุนเพื่อกู้เงิน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>บุญถึง จะไปต่างประเทศต้องขออนุญาตจากเจ้าพนักงานพิทักษ์ทรัพย์</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>บุญล้ำ มีหนี้สินล้นพ้นตัว เกินกว่า 5,000,000 บาทแต่เขาสามารถพิสูจน์ให้ศาลเห็นว่าตนยังอยู่ในฐานะที่จะชำระหนี้ได้</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 33,
+            "question_id": 167135,
+            "question_text": "<p>ยุทธศาสตร์การขับเคลื่อนปรัชญาของเศรษฐกิจพอเพียงภาคอุตสาหกรรมข้อใดมีประสิทธิผลที่สุด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ขับเคลื่อนผ่านการกำหนดมาตรฐานเลขที่ มอก. ๙๙๙๙</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ขับเคลื่อนผ่านทีมงานวิทยากรเข้าอบรมพนักงานตามบริษัทอุตสาหกรรมต่างๆ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ขับเคลื่อนผ่านสื่อโทรทัศน์ฯลฯ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ขับเคลื่อนผ่านประธานบริษัทอุตสาหกรรมต่างๆ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ขับเคลื่อนผ่านแนวทางตามข้อ 2 และ 4</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 34,
+            "question_id": 167136,
+            "question_text": "<p>ลักษณะเด่นต่อไปนี้ข้อใดเป็นของสหกรณ์นิคม</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ทำให้สมาชิกมีปัจจัยการผลิตเพิ่มขึ้น จากการกู้เงินสหกรณ์ในอัตราดอกเบี้ยต่ำมาประกอบอาชีพ ทั้งได้รับความรู้เกี่ยวกับการใช้เทคโนโลยีในการผลิต</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>จัดหาสิ่งของและบริการที่สมาชิกมีความต้องการมาจำหน่าย ช่วยจำหน่ายผลิตผล ผลิตภัณฑ์ของสมาชิก</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>จัดตั้งขึ้นในหมู่ชาวประมง เพื่อแก้ไขปัญหาและอุปสรรคในการประกอบอาชีพ ซึ่งชาวประมงแต่ละคนไม่สามารถแก้ไขให้ลุล่วงไปได้ตามลำพัง</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>มีสมาชิกเป็นบุคคลซึ่งมีอาชีพอย่างเดียวกัน หรือที่อาศัยอยู่ในชุมชนเดียวกัน มีวัตถุประสงค์เพื่อส่งเสริมให้สมาชิกรู้จักออมทรัพย์</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ดำเนินธุรกิจให้บริการแก่สมาชิก ในด้านการประกอบอาชีพเพื่อให้มีรายได้และคุณภาพชีวิตที่ดีขึ้นเช่นการให้เช่าที่ดิน</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 35,
+            "question_id": 167137,
+            "question_text": "<p>หากต้นทุนการผลิตสูงขึ้นไม่มากนัก ผู้ขายจะตัดสินใจทำอย่างไรกับการตั้งราคาขายในระยะสั้น</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>การลดคุณภาพของสินค้าและบริการของตนลง</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ผู้ขายมักจำเป็นต้องกำหนดราคาให้สูงขึ้น</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ผู้ขายจะยังคงระดับราคาเดิมไว้</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>กำหนดราคาให้สูงขึ้นและเป็นการกำหนดราคาเลขคี่</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ลดราคาเพื่อกระตุ้นปริมาณการขาย</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 36,
+            "question_id": 167138,
+            "question_text": "<p>ข้อใดคือการประยุกต์ใช้ปรัชญาของเศรษฐกิจพอเพียงในภาคอุตสาหกรรมการค้าและการบริการในเรื่องการมีภูมิคุ้มกันที่ดี</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ตอบแทนช่วยเหลือสังคมในรูปแบบต่าง ๆ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ไม่ผลิตสินค้ามากเกินความต้องการของผู้บริโภคจนเหลือล้นตลาด</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>บริษัทมีเหตุผลโปร่งใสในการปรับเปลี่ยนตำแหน่งงานของพนักงาน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>พยายามให้พนักงานติดตามข่าวสาร&nbsp; และสถานการณ์ต่าง ๆ ทั้งภายในและต่างประเทศ</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>มีความรับผิดชอบต่อสังคมและเอาใจใส่ต่อสิ่งแวดล้อม</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 37,
+            "question_id": 167139,
+            "question_text": "<p>พระราชดำรัสเกี่ยวกับป่า 3 อย่าง ประโยชน์ 4 อย่าง ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดชนั้นเป็นการปลูกฝังปรัชญาเศรษฐกิจพอเพียงในเรื่องใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>พอประมาณ และมีเหตุมีผล ภายใต้เงื่อนไขความรู้ คู่คุณธรรม</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>พอประมาณ และมีภูมิคุ้มกัน ภายใต้เงื่อนไขความรู้ คู่คุณธรรม</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>มีเหตุมีผล และมีภูมิคุ้มกัน ภายใต้เงื่อนไขความรู้ คู่คุณธรรม</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>พอประมาณ มีเหตุมีผล และมีภูมิคุ้มกัน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>พอประมาณ มีเหตุมีผล และมีภูมิคุ้มกัน ภายใต้เงื่อนไขความรู้ คู่คุณธรรม</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 38,
+            "question_id": 167140,
+            "question_text": "<p>ข้อใดกล่าวถูกต้องในเรื่องผลกระทบจากโครงการรับจำนำข้าว</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>วิธีการขายข้าวให้พันธมิตรและใช้สัญญาแบบรัฐต่อรัฐทำให้การขายข้าวได้ราคาสูงสุด</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>แรงงานในด้านอุตสาหกรรมขาดแรงงาน</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ราคาสินค้าเกษตรต่ำลง</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>บริษัทส่งออกข้าวเพิ่มแรงงานมากขึ้น</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ข้อ 1 และ 4 ถูกต้อง</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 39,
+            "question_id": 167141,
+            "question_text": "<p>การกระทำของสหกรณ์ใดต่อไปนี้ถือว่าผิดหลักการของสหกรณ์</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>สหกรณ์ชะนี เปิดรับสมาชิกเป็นผู้หญิงเท่านั้นเพื่อความสะดวกใจในการทำงานของสมาชิกเพศเดียวกัน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>สหกรณ์ชะอม นิยมนำเงินผลกำไรส่วนหนึ่งนำไปช่วยเหลือชุมชนรอบข้างในการจัดกิจกรรมต่างๆมากกว่าที่จะนำมาปันผลให้สมาชิก</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>สหกรณ์ชะมวง มีความร่วมมือกับสหกรณ์อื่นๆในเรื่องการปล่อยกู้แต่สุดท้ายส่งผลกระทบกับตนเอง</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>สหกรณ์ชะเมา สมาชิกไม่มีส่วนร่วมทางเศรษฐกิจจะจ้างผู้เชี่ยวชาญมาดูแลเรื่องเศรษฐกิจเฉพาะเพื่อเกิดประสิทธิภาพในการทำงาน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>สหกรณ์ชะโอด อยู่ในความควบคุมดูแลขององค์การปกครองส่วนท้องถิ่นเป็นหลักในการตัดสินใจสำคัญๆ</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 40,
+            "question_id": 167142,
+            "question_text": "<p>ปัจจุบันตลาดของโทรศัพท์มือถือทั้งในประเทศไทยและทั่วโลกนั้นมีลักษณะของตลาดอยู่ในประเภทใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ตลาดกึ่งแข่งขันกึ่งผูกขาด</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ตลาดที่มีผู้ขายน้อยราย</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ตลาดผูกขาด</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ข้อ 2 และ 3</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ข้อ 1 และ 2</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 41,
+            "question_id": 167143,
+            "question_text": "<p>ตัวชี้วัดของชาติเรื่องใดที่ปัจจุบันประชากรในหลายประเทศทั่วโลกให้ความสนใจและความสำคัญมากที่สุด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>การรักษาดุลการค้าระหว่างประเทศ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ปัญหาการว่างงานลดน้อยลง</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>GNP รายได้เฉลี่ยต่อบุคคล</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>GNH ความสุขมวลรวมประชาชาติ</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ไม่มีหนี้สาธารณะ</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 42,
+            "question_id": 167144,
+            "question_text": "<p>ข้อใดต่อไปนี้เป็นนโยบายการคลัง ทำเพื่อกระตุ้นการใช้จ่ายในประเทศให้เศรษฐกิจหมุนเวียนดีขึ้น</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>รัฐบาลแจ้งคูปองคนละ 1000 ให้ไปใช้จ่ายซื้อสินค้าและบริการตามร้านที่ร่วมการ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>รัฐบาลเก็บภาษี ในอัตราที่ต่ำสำหรับคนที่ทำงานยังไม่ถึง 5 ปี</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>รัฐบาลเปิดรับบรรจุคนเข้าทำงาน ส่งเสริมให้มีการจ้างงานเพิ่มขึ้นในหน่วยงานรัฐ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>เพิ่มค่าภาษีสนามบินในประเทศ คนจะได้ไม่ไปต่างประเทศ จะได้จับจ่ายใช้สอยในประเทศมากขึ้น</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ถูกทุกข้อที่กล่าวมาทั้งหมด</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 43,
+            "question_id": 167145,
+            "question_text": "<p>การที่รัฐสนับสนุนโครงการโอทอป หนึ่งตำบลหนึ่งผลิตภัณฑ์นั้น โดยมีการให้เงินกู้แบบดอกเบี้ยราคาถูกกับผู้ประกอบการและมีส่วนลดหย่อนภาษีสำหรับผู้ซื้อผลิตภัณฑ์ การดำเนินการลักษณะนี้ถือว่ารัฐดำเนินนโยบายทางเศรษฐกิจแบบใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>นโยบายการเงินแบบผ่อนคลาย</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>นโยบายการคลังแบบขยายตัว</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>นโยบายการเงินแบบเข้มงวดและนโยบายการคลังแบบขยายตัว</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>นโยบายการเงินแบบเข้มงวด</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>นโยบายการเงินแบบผ่อนคลายและนโยบายการคลังแบบขยายตัว</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 44,
+            "question_id": 167146,
+            "question_text": "<p>ถ้าประเทศไทยต้องการที่จะเรียกร้องให้ประเทศที่พัฒนาแล้วยอมลดภาษีศุลกากรให้กับประเทศที่กำลังพัฒนาจะต้องทำงานเกี่ยวข้องโดยตรงกับองค์กรระหว่างประเทศใดต่อไปนี้</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>องค์การการค้าโลก (World Trade Organization : WTO)</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>กองทุนการเงินระหว่างประเทศ (International Monetary Fund : IMF)</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>การประชุมสหประชาชาติว่าด้วยการค้าและการพัฒนา (United Nations Conferences on Trade and Development : UNCTAD)</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ธนาคารระหว่างประเทศเพื่อการบูรณะและพัฒนา (The International Bank for Reconstruction and Development : IBRD)</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>องค์การแรงงานระหว่างประเทศ (International Labour Organization : ILO)</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 45,
+            "question_id": 167147,
+            "question_text": "<p>ถ้าประเทศไทยมีผลการดำเนินเศรษฐกิจที่เกินดุลการค้ามากๆ (ส่งออก มากกว่า นำเข้า) และ มีความเชื่อมั่นจากต่างประเทศค่อนข้างสูง ในเรื่องการลงทุนและการท่องเที่ยวแสดงว่ากำลังจะเกิดเหตุการณ์ใดต่อไปนี้</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>เงินบาทแข็งค่าขึ้น</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>เงินบาทอ่อนค่าลง</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>เงินบาทลอยตัว</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>เงินบาทคงที่อย่างมีเสถียรภาพ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>เงินบาทแข็งค่าขึ้นและเงินบาทคงที่อย่างมีเสถียรภาพ</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 46,
+            "question_id": 167148,
+            "question_text": "<p>ข้อใด<u><strong>มิใช่</strong></u>พันธกิจขององค์กรระหว่างประเทศด้านเศรษฐกิจที่มีความเกี่ยวข้องกับภูมิภาคเอเชีย</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>การให้ความช่วยเหลือด้านเทคนิควิทยาการ คือการช่วยเหลือในการยกร่างกฎหมายแรงงานภายในประเทศสมาชิก ให้คำแนะนำในการบริหารด้านแรงงานและให้ความช่วยเหลือด้านเทคนิควิทยาการ ในการปรับปรุงเศรษฐกิจและสังคมของประเทศสมาชิก</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>เพื่อลดอุปสรรคการค้าสินค้าและการค้าบริการ ตลอดจนการลงทุนระหว่างประเทศสมาชิก โดยให้สอดคล้องกับกฎของแกตต์</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>เพื่อส่งเสริมการลงทุนในต่างประเทศของภาคเอกชนธนาคารโลกจะช่วยเหลือส่งเสริมโดยเป็นผู้ค้ำประกันการลงทุน หรือร่วมกับองค์กรอื่น ในการกู้ยืมของเอกชน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>เพื่อให้ได้มาซึ่งรายได้อย่างสม่ำเสมอสำหรับประเทศผู้ผลิตน้ำมัน ในขณะเดียวกันก็จัดหาน้ำมันให้แก่ชาติที่ซื้อขายอย่างมีประสิทธิภาพและสม่ำเสมอ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>เพื่ออำนวยความสะดวกและส่งเสริมการขยายตัวทางการค้าระหว่างประเทศอย่างสมดุลเพื่อให้เกิดการจ้างงาน รายได้และพัฒนาการผลิตในระดับสูงรวมทั้งการพัฒนาทรัพยากรที่มีอยู่ของประเทศสมาชิก</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 47,
+            "question_id": 167149,
+            "question_text": "<p>ผลิตภัณฑ์มวลรวมประชาชาติ Gross National Product (GNP) คือมูลค่าสินค้าและบริการขั้นสุดท้ายที่ผลิตขึ้นโดยใช้ทรัพยากรที่คนของประเทศนั้นๆ เป็นเจ้าของ มีทั้งที่ผลิตในและนอกประเทศในช่วงระยะเวลาหนึ่ง โดยอาจคำนวณเป็นราย 3-6 และ 12 เดือน โดยคำนวณจากข้อต่อไปนี้ยกเว้นข้อใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>การส่งออกและนำเข้าสุทธิของเอกชน</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>รายจ่ายเพื่อการบริโภคของเอกชน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>กำไรก่อนเสียภาษีของเอกชน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>รายจ่ายเพื่อการลงทุนของเอกชน ซึ่งจำแนกเป็นการซื้อเครื่องมือ เครื่องจักร สินค้าคงคลัง และค่าก่อสร้างสิ่งก่อสร้างใหม่</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ค่าเสื่อมราคาของเอกชน</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 48,
+            "question_id": 167150,
+            "question_text": "<p>ข้อใดกล่าวถูกต้องเกี่ยวกับการที่ไทยได้รับสิทธิประโยชน์หลายประการในการเข้าเป็นสมาชิกขององค์การการค้าโลก</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>การมีกฎระเบียบการค้าระหว่างประเทศทำให้ได้รับการลดหย่อนภาษีจากประเทศภาคี</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ผู้ผลิตและผู้ส่งออกในประเทศสามารถคาดการณ์และวางแผนกลยุทธ์การค้าระหว่างประเทศล่วงหน้าได้</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>การส่งออกขยายตัวเพิ่มขึ้นและตลาดการค้าเปิดกว้างมากขึ้น</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>มีเวทีร้องเรียนข้อพิพาททางการค้าระหว่างประเทศ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ได้รับความช่วยเหลือด้านข้อมูล วิชาการต่างๆระหว่างประเทศเพื่อการพัฒนาทางการค้า</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 49,
+            "question_id": 167151,
+            "question_text": "<p>จุดเด่นทางอารยธรรมที่ชนเผ่าสุเมเรียนได้จารึกไว้ในประวัติศาสตร์คือเรื่องใดดังต่อไปนี้</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>มีการคำนวนที่เป็นเลิศทางคณิตศาสตร์ และสร้างปฏิทินที่ยาวนานนับเป็นล้านปีได้</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ผู้คิดประดิษฐ์ตัวอักษรขึ้นเป็นครั้งแรกในโลก</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ข้อ 2 และ 4</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>เป็นชนเผ่าแรกที่เข้าครอบครอง และทำการก่อสร้างระบบชลประทานเป็นชาติแรก</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>การฆ่าบูชายัญ คือเหตุการณ์สำคัญที่ต้องมีพิธีเฉลิมฉลองยิ่งใหญ่</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 50,
+            "question_id": 167152,
+            "question_text": "<p>จากประวัติศาสตร์ในยุคหินเก่า มนุษย์กลุ่มที่พบที่ฝรั่งเศส เครื่องมือทำจากกระดูก&nbsp;เขาสัตว์ เครื่องประดับหลายรูปแบบ ภาพเขียนในถ้ำที่สเปนและฝรั่งเศส มีชื่อเรียกกันว่า</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>มนุษย์วานร</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>มนุษย์ชวา</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>มนุษย์นีแอนเดอธัล</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>มนุษย์ไฮเดนเบิร์ก</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>มนุษย์โครมันยอง</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 51,
+            "question_id": 167153,
+            "question_text": "<p>การค้นพบว่าการถ่ายทอดลักษณะเด่นและด้อยไปสู่ลูกหลานที่เรียกว่ากฎของพันธุกรรมนั้นเป็นการค้นพบที่หลักแหลมและมีผลต่อมนุษยชาติมาก ผู้ค้นพบกฎของพันธุกรรมนี้เป็นคนแรกคือใคร</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>อันทอน วัน เลเวนฮุก</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>เกรกอร์ เมนเดล</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>เจมส์ ดี. วัตสัน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>หลุยส์ ปาสเตอร์</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>โทมัส มอร์แกน</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 52,
+            "question_id": 167154,
+            "question_text": "<p>ข้อใดคือสิ่งที่ชาวตะวันตกได้ก่อปัญหาไว้ในอดีตในยุคล่าอาณานิคมและเป็นอุปสรรคขัดขวางการพัฒนาเศรษฐกิจของแอฟริกามาจนถึงทุกวันนี้</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ชาวตะวันตกนำคริสต์ศาสนาเข้ามาเผยแพร่ในแอฟริกา</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ชาวตะวันตกล้มล้างความเชื่อในเรื่องเวทมนตร์คาถาและวิญญาณของคนแอฟริกา</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ชาวตะวันตกสามารถกั้นเขตแดนระหว่างเผ่าต่าง ๆ ในแอฟริกาตามความพอใจ</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ชาวตะวันตกจับชาวแอฟริกันนำไปค้าทาสจำนวนมาก</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ชาวตะวันตกนำศิลปะเข้ามาให้แอฟริกา</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 53,
+            "question_id": 167155,
+            "question_text": "<p>องค์การใดต่อไปนี้ที่ปฎิบัติหน้าที่ไม่มีประสิทธิภาพจนเป็นเหตุให้สงครามโลกครั้งที่ 2 อุบัติขึ้น</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>องค์การสันนิบาตชาติ</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>องค์การสหประชาชาติ&nbsp;</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>องค์การสนธิสัญญาแอตแลนติกเหนือ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ศาลยุติธรรมระหว่างประเทศ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>องค์การปลดปล่อยปาเลสไตน์</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 54,
+            "question_id": 167156,
+            "question_text": "<p>ข้อใดกล่าวคลาดเคลื่อนสำหรับเหตุการณ์สงครามครูเสด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>เป็นการแย่งชิงดินแดนที่เป็นสถานที่สำคัญของสามศาสนาได้แก่ อิสลาม ยูได และ คริสต์</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>เป็นสงครามครั้งใหญ่ระหว่างชาวมุสลิมและชาวคริสต์</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ในมุมของชาวมุสลิมเป็นสงครามที่ต่อสู้เพื่อความถูกต้องตามพระประสงค์ของพระผู้เป็นเจ้า ซึ่งชาวมุสลิมเรียกกันว่า จิฮัด</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>เยรูซาเล็มตกอยู่ภายใต้การปกครองของชาวคริสเตียน ผู้แสวงบุญชาวมุสลิมจึงมีความต้องการดินแดนเยรูซาเล็มเป็นของตนเอง</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>มุสลิมได้กลายเป็นมหาอำนาจทางการค้าแถบชายฝั่งทะเลเมดิเตอร์เรเนียนชาวคริสเตียนในยุโรปจึงต้องทำสงครามกับมุสลิมเพื่อหยุดยั้งความเจริญก้าวหน้าของมุสลิม</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 55,
+            "question_id": 167157,
+            "question_text": "<p>ข้อใดน่าจะเป็นคำจำกัดความของมนุษย์ยุคหินเก่าตอนปลาย</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>มนุษย์ยุคนี้ได้มีเครื่องมือเครื่องใช้มีความหลากหลายกว่ายุคก่อน ได้แก่ เครื่องมือเครื่องใช้ที่ทำจากหินและกระดูกสัตว์โดยการแกะสลัก เช่น เข็มเย็บผ้า ฉมวก หัวลูกศร และทำเครื่องประทับด้วยเปลือกหอยและกระดูกสัตว์</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>มนุษย์ในช่วงนี้เริ่มทำเครื่องจักรสาน เช่น ตะกร้าสาน ทำรถลาก เครื่องมือเครื่องใช้ที่ทำด้วยหินในยุคนี้มีความประณีตมากขึ้น ตลอดจนรู้จักนำสุนัขมาเลี้ยงสัตว์เลี้ยง</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>มนุษย์ในยุคนี้อาศัยอยู่รวมกันเป็นหมู่บ้าน ดำรงชีวิตด้วยการเพาะปลูกและเลี้ยงสัตว์การเพาะปลูกได้เปลี่ยนวิถีชีวิตของมนุษย์จากสังคมล่าสัตว์มาเป็นสังคมเกษตรกรรม</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>มนุษย์ในยุคนี้สภาพสังคมที่มีลักษณะของการอยู่รวมกันเป็นครอบครัว เป็นกลุ่มย่อยๆ เพื่อการดำรงชีวิตมีการจัดระเบียบของกลุ่มทั้งด้านความร่วมมือและการแบ่งหน้าที่กัน ผู้ชายออกล่าสัตว์ ผู้หญิงดูแลเด็กและหาผลไม้</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>มนุษย์ยุคนี้ได้มีสิ่งของเครื่องใช้และเครื่องประดับแต่ก็ยังคงมีเครื่องมือหินขัดใช้อยู่ เครื่องมือเครื่องใช้ใพบตามแหล่งต่างๆ ในภูมิภาคต่างๆ ของโลกนอกจากทำด้วยสำริดแล้วยังพบเครื่องมือเครื่องใช้ทำจากดินเผา หิน และแร่</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 56,
+            "question_id": 167158,
+            "question_text": "<p>อารยธรรมลุ่มแม่น้ำฮวงโหนั้นมีสิ่งก่อสร้างใดที่เป็นสถาปัตยกรรมที่ผสมผสานระหว่างยุโรปและจีนโบราณ</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>เมืองปักกิ่ง สร้างในสมัยราชวงศ์หงวน โดยกุบไลข่าน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>พระราชวังฤดูร้อน สร้างในสมัยราชวงศ์ชิง โดยพระนางซูสีไทเฮา</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>กำแพงเมืองจีน สร้างในสมัยราชวงศ์จิ๋น เพื่อป้องกันการรุกรานของมองโกล</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>สุสานจิ๋นซีฮ่องเต้ เมืองซีอาน&nbsp; สร้างในสมัยราชวงศ์ฉิน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>พระราชวังหลวงกู้กง หรือ พระราชวังต้องห้าม ที่จัตุรัสเทียนอันเหมินสร้างในสมัยราชวงศ์หมิงและชิง</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 57,
+            "question_id": 167159,
+            "question_text": "<p>ประเทศไทยไม่สามารถเป็นสมาชิกองค์การระหว่างประเทศใดต่อไปนี้ได้</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>องค์การอาหารและการเกษตรแห่งสหประชาชาติ (Food and Agriculture Organization : FAO)</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ความตกลงทางการค้าเสรีอเมริกาเหนือ (North American Free Trade Agreement : NAFTA)</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>องค์การของประเทศผู้ส่งน้ำมันเป็นสินค้าส่งออก(Organization of Petroleum Exporting Countries : OPEC)</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ธนาคารระหว่างประเทศเพื่อการบูรณะและพัฒนา (The International Bank for Reconstruction and Development : IBRD)</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ข้อที่ 2 และ 3</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 58,
+            "question_id": 167160,
+            "question_text": "<p>ข้อใดคือลักษณะสำคัญของสนธิสัญญาแวร์ซายส์</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ข้อตกลงว่าด้วยการลดก๊าซเรือนกระจก</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ยุติการทำสงครามและชดเชยให้กับประเทศที่เสียหายจากสงคราม</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>เปิดประเทศให้มีการค้าเสรี</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>กฎเกณฑ์ที่จำกัดวิธีการอันทารุณในการทำสงคราม</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>การยกเลิกการค้าผูกขาดแบบสิบสามห้าง ข้อนี้ทำให้ข้อได้เปรียบของไทยที่ค้าโดยตรงในระบบบรรณาการหมดไป</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 59,
+            "question_id": 167161,
+            "question_text": "<p>สงครามคราวเสียกรุงศรีอยุธยาครั้งที่สอง เป็นความขัดแย้งทางทหารครั้งที่สองระหว่างราชวงศ์อลองพญาแห่งพม่า กับราชวงศ์บ้านพลูหลวงแห่งอยุธยา ในการทัพครั้งนี้ กรุงศรีอยุธยาซึ่งเป็นราชธานีคนไทยเกือบสี่ศตวรรษได้เสียแก่พม่าและถึงกาลสิ้นสุดลงไปด้วย ตรงกับวันที่ 7 เมษายน พ.ศ. 2310 ในปีที่เสียกรุงนี้ถ้าเทียบกับการนับฮิจเราะห์ศักราช คือข้อใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>1689</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>1129</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>14</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>1188</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>1767</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 60,
+            "question_id": 167162,
+            "question_text": "<p>&ldquo;มีการจดบันทึกไว้ในกระดาษฝรั่งที่ตกทอดกันมาว่า ขนมจัดเป็นอาหารที่คู่สำรับกับข้าวไทยมาตั้งแต่ครั้งโบราณ โดยเฉพาะฝอยทอง นิยมทานกันตั้งแต่สมัยสุโขทัยแล้ว&rdquo; จากข้อความนี้ถ้าใช้วิธีการทางประวัติศาสตร์เพื่อตรวจสอบว่าเป็นหลักฐานที่แท้จริงเพียงใดควรใช้วิธีอะไร</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>การประเมินคุณค่าภายใน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>การประเมินคุณค่าภายนอก</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ทั้งข้อ 1 ,2 ,4และ5</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>วิพากษ์วิธีภายใน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>วิพากษ์วิธีภายนอก</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 61,
+            "question_id": 167163,
+            "question_text": "<p>ทุกข้อที่กล่าวมานี้คือวัฒนธรรมตะวันตกที่มีอิทธิพลต่อสังคมไทยยกเว้นข้อใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>การนั่งเก้าอี้แทนการคุกเข่า</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>การมีชื่อ-นามสกุล</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>หลักของกฎหมายไทย</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>การวางท่อประปา</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>การสร้างป้อมปราการริมแม่น้ำเจ้าพระยา</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 62,
+            "question_id": 167164,
+            "question_text": "<p>ข้อใดกล่าว<strong><u>ไม่ถูกต้อง</u></strong>เกี่ยวกับจุดเด่นของขรัวอินโข่ง จิตรกรเอกในประวัติศาสตร์ผู้เป็นต้นแบบของจิตรกรไทยในยุคปัจจุบัน</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ท่านเป็นจิตรกรไทยคนแรกที่เขียนภาพแนว abstract เป็นคนแรก</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ท่านเก่งในการวาดภาพปริศนาธรรมที่เชื่อมโยงกับพุทธศาสนา</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ท่านใช้วิธีวาดแบบทัศนียวิสัย 3 มิติ ทำให้ภาพเกิดความลึก</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ท่านเขียนภาพไทยที่เขียนในรูปแบบตะวันตกแต่ก็ยังคงลักษณะความเป็นไทยไว้ได้</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ท่านได้ฝากผลงานไว้ที่พระอุโบสถวัดบวรนิเวศวิหาร</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 63,
+            "question_id": 167165,
+            "question_text": "<p>ข้อความต่อไปนี้คือวัตถุประสงค์และกระบวนการทำงานของขบวนการเสรีไทยที่ชัดเจน<u>ยกเว้น</u>ข้อใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ต่อสู้ญี่ปุ่นผู้รุกราน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ปฏิบัติการเพื่อให้ฝ่ายสัมพันธมิตรรับรองว่าเจตนารมณ์แท้จริงของราษฎรไทยไม่เป็นศัตรูต่อฝ่ายสัมพันธมิตร</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ปฏิบัติการเพื่อให้ฝ่ายสัมพันธมิตรรับรองว่าประเทศไทยจะไม่ตกเป็นฝ่ายแพ้สงคราม</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>อาศัยทั้งการปฏิบัติการทางทหารในการต่อสู้ญี่ปุ่นผู้รุกรานควบคู่ไปกันกับการเจราเพื่อทำความเข้าใจกับสัมพันธมิตร</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ขบวนการเสรีไทยจะจำกัดอยู่ในหมู่คนจำนวนน้อยที่เป็นชนชั้นนำ คือ ข้าราชการ นักการเมือง และนักเรียนนอกทั้งหลายที่อยู่ใกล้ชิดอำนาจรัฐ</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 64,
+            "question_id": 167166,
+            "question_text": "<p>กษัตริย์พระองค์ใดทรงปฏิรูปการปกครองโดยยกเลิกจตุสดมภ์และสถาปนากระทรวง 12 กระทรวง</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>พระสมเด็จพระนั่งเกล้าเจ้าอยู่หัว</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>พระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>พระบาทสมเด็จพระจอมเกล้าเจ้าอยู่หัว</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>พระบาทสมเด็จพระมงกุฎเกล้าเจ้าอยู่หัว</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>พระบาทสมเด็จพระปรเมนทรมหาอานันทมหิดล</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 65,
+            "question_id": 167167,
+            "question_text": "<p>เทคโนโลยีสมัยใหม่ในข้อใดที่ผสมผสานเครื่องมือทางภูมิศาสตร์ไว้มากที่สุด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>FACEBOOK</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>GOOGLE MAP</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>LINE</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>GPS NAVIGATER</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>INSTARGRAM</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 66,
+            "question_id": 167168,
+            "question_text": "<p>ถ้าวัดระยะทางจริงจากห้างเซ็นทรัลลาดพร้าวเดินทางไปห้างเซ็นทรัลเวสต์เกตได้ 24.7 กิโลเมตร หากต้องการย่อลงในแผนที่ที่มีมาตราส่วน 1:50,000 ระยะทางในแผนที่จะมีค่าเท่ากับเท่าใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>45.8 เซนติเมตร</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>48.5 เซนติเมตร</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>35.67 เซนติเมตร</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>49.4 เซนติเมตร</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>51.66 เซนติเมตร</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 67,
+            "question_id": 167169,
+            "question_text": "<p>ภาคใต้มีฝนตกชุกตลอดทั้งปี แต่มีปัญหาในการขาดแคลนน้ำเนื่องจากสาเหตุใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ภาคใต้ส่วนใหญ่เป็นดินปนทราย มีความอุดมสมบูรณ์ต่ำ ไม่เหมาะสำหรับการเพาะปลูก</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>มีแม่น้ำสายสั้น ๆ ไม่สามารถเก็บกักน้ำได้</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>มีการทำเหมืองแร่มากที่สุดในประเทศทำให้ต้นไม้เหลือน้อย</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ปลูกสวนยางมากทำให้ดินเสื่อมเป็นร่อง</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>มีสถานที่ท่องเที่ยวทางทะเลมากจึงมีความต้องการใช้น้ำจืดมากจนขาดแคลน</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 68,
+            "question_id": 167170,
+            "question_text": "<p>รอยเลื่อนใดมีโอกาสทำให้เกิดแผ่นดินไหวใหญ่ในภาคกลางและสถานที่ท่องเที่ยวทางทะเลชื่อดังของภาคใต้ได้</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>รอยเลื่อนศรีสวัสดิ์และรอยเลื่อนคลองมะรุ่ย</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>รอยเลื่อนศรีสวัสดิ์และรอยเลื่อนระนอง</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>รอยเลื่อนระนองและรอยเลื่อนเจดีย์สามองค์</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>รอยเลื่อนเจดีย์สามองค์และรอยเลื่อนคลองมะรุ่ย</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>รอยเลื่อนคลองมะรุ่ยและรอยเลื่อนระนอง</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 69,
+            "question_id": 167171,
+            "question_text": "<p>ลักษณะทางกายภาพที่เรียกว่า วงแหวนแห่งไฟ (Ring of fire) ไม่มีผลทำให้เกิดสิ่งใด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>แผ่นดินไหว</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ภูเขาไฟระเบิด</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>สึนามิ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ฝนกรด</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ความแห้งแล้ง</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 70,
+            "question_id": 167172,
+            "question_text": "<p>ถ้านักท่องเที่ยวชาวต่างประเทศมาถามท่านว่า ขอให้ช่วยแนะนำแหล่งมรดกโลกของประเทศไทยโดยการขึ้นทะเบียนของยูเนสโก เป็นแหล่งที่อยู่อาศัยของสัตว์ป่าหายากหลายชนิด และมีความสำคัญในประวัติศาสตร์ของไทย เดินทางไปไม่ไกลมากจากกรุงเทพมหานคร ท่านจะแนะนำสถานที่ใดให้เขาเหล่านั้น</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>เขตรักษาพันธุ์สัตว์ป่าห้วยขาแข้ง</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>เขตรักษาพันธุ์สัตว์ป่าทุ่งใหญ่นเรศวร</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>เขตรักษาพันธุ์สัตว์ป่าดงใหญ่</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>เขตรักษาพันธุ์สัตว์ป่าซับลังกา</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>เขตรักษาพันธุ์สัตว์ป่าอุ้มผาง</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 71,
+            "question_id": 167173,
+            "question_text": "<p>ปัจจุบันคนไทยให้ความสนใจในเรื่องการนำน้ำบาดาลมาใช้มากขึ้นซึ่งอาจมีผลทำให้ในอนาคตจะเกิดวิกฤตการขาดแคลนน้ำบาดาลและข้อใดต่อไปนี้ไม่ใช่วิธีการใช้น้ำบาดาลอย่างยั่งยืน</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ควรมีการบริหารจัดการน้ำไว้ 3 สถานการณ์ ได้แก่ สถานการณ์ปกติ สถานการณ์วิกฤต</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ควรมีการขุดเจาะบ่อน้ำบาดาลให้มีการกระจายตัวทั่วพื้นที่ใช้น้ำ ไม่ควรใช้บ่อน้ำบาดาลเพียงบ่อเดียวในปริมาณมากเกินไป</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ควรขุดน้ำบาดาลเฉพาะชั้นน้ำตื้นอย่าขุดลึก</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ควรมีการเติมน้ำลงแหล่งน้ำใต้ดิน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ควรมีมาตรการควบคุมความสมดุลการใช้น้ำบาดาลด้วยการปรับราคาน้ำบาดาลและน้ำประปา</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 72,
+            "question_id": 167174,
+            "question_text": "<p>ข้อใดคือวิธีการกำจัดฝุ่นควันในบรรยากาศที่ก่อให้เกิดปัญหามลพิษหรือเหตุเดือดร้อนรำคาญโดยเป็นการสร้างภูมิคุ้มกันที่ดี</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>การปรับปรุงคุณภาพน้ำมันเชื้อเพลิงให้ดีขึ้น</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ใช้ผ้าใบหรือวัสดุคลุมรถให้มิดชิด</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ปรับแต่งเครื่องยนต์ให้อยู่ในสภาพดี</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>รณรงค์การทาสีเมื่อยามจำเป็น</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ทุกข้อยกเว้นข้อ 4</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 73,
+            "question_id": 167175,
+            "question_text": "<p>เมื่อพบการค้าสัตว์ป่าเช่น ช้างพลาย เราควรแจ้งไปที่หน่วยงานใดต่อไปนี้เพื่อทำการจับกุมผู้กระทำผิดอย่างเร่งด่วน</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ศูนย์ประสานงานการช่วยเหลือสัตว์ป่า</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>มูลนิธิคุ้มครองสัตว์ป่าและพรรณพืชแห่งประเทศไทยในพระบรมราชินูปถัมภ์</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>มูลนิธิสืบนาคะเสถียร</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>มูลนิธิเพื่อนช้าง</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>กองบังคับการปราบปรามการกระทำผิดเกี่ยวกับทรัพยากรธรรมชาติและสิ่งแวดล้อม</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 74,
+            "question_id": 167176,
+            "question_text": "<p>ทำไมถึงต้องตระหนักถึงการอนุรักษ์นกเงือกให้คงอยู่ต่อไป</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>นกเงือกกินผลไม้เป็นอาหารหลักมากกว่า 100 ชนิด</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>นกเงือกเป็นผู้ล่า โดยกินสัตว์จำพวก หนู แมลง กระรอก</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>นกเงือกทำให้เกิดการสร้างอาชีพให้คนในพื้นที่</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ถูกทุกข้อ ยกเว้นข้อ 3</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>นกเงือกถือว่าเป็นตัวบ่งชี้ถึงความอุดมสมบูรณ์ของป่าได้</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 75,
+            "question_id": 167177,
+            "question_text": "<p>ข้อใดเป็นวิธีการที่เราสามารถมีส่วนช่วยในการคลายโลกร้อนได้ดีที่สุด</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ลดการใช้พลังงานในบ้านด้วยการปิดทีวี คอมพิวเตอร์ เครื่องเสียง และเครื่องใช้ไฟฟ้าต่างๆ เมื่อไม่ได้ใช้งาน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>เปลี่ยนไปใช้ไฟแบบหลอด LED</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ปลูกต้นไม้ในสวนหน้าบ้านมากกว่า 1 ต้น</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ขับรถยนต์ส่วนตัวให้น้อยลง ด้วยการปั่นจักรยาน ใช้รถโดยสารประจำทาง</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>โละทิ้งตู้เย็นรุ่นเก่า ตู้เย็นที่ผลิตเมื่อ 10 กว่าปีที่แล้ว</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 76,
+            "question_id": 167178,
+            "question_text": "<p>ความเชื่อเรื่องโชคลางหรือเรื่องฮวงจุ้ยในการปลูกบ้านใดที่มีผลกระทบกับเจ้าของบ้านและทำให้สิ่งแวดล้อมสูญเสียไปด้วย</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ห้ามปลูกบ้านบนทางสามแพร่งจะเป็นทางผีผ่าน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ห้ามปลูกบ้านขวางพระอาทิตย์ย่อมเป็นการหลบหลู่เทพาอารักษ์ที่คอยดูแลบ้าน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>ห้ามปลูกบ้านทับตอหรือต้นไม้เพราะจะทำให้คนในบ้านเดือดร้อน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ห้ามสร้างบ้านคร่อมทางน้ำไหลจะทำให้เงินทางไหลออก</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ข้อ 3 และ 4 ถูกต้อง</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 77,
+            "question_id": 167179,
+            "question_text": "<p>ปัจจุบันประเทศไทยมีความเสี่ยงที่จะเกิดปัญหาน้ำท่วมและขาดแคลนน้ำ ท่านคิดว่าโครงการน่าจะมีบทบาทสำคัญในการป้องกันการเกิดน้ำท่วมและน้ำไม่พอใช้ตลอดปี</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>โครงการสร้างแก้มลิง</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>โครงการสร้างฝายชะลอน้ำ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>โครงการกำจัดขยะพลาสติกในท่อน้ำ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>โครงการก่อสร้างคันกั้นน้ำ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>โครงการสร้าง green way</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 78,
+            "question_id": 167180,
+            "question_text": "<p>ข้อใดต่อไปนี้คือแนวทางในการลดโลกร้อนที่เหมาะสมสำหรับอาชีพนักธุรกิจ อุตสาหกรรมและบริการ</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ศึกษาและทำวิจัยในระดับพื้นที่ เพื่อให้มีข้อมูลที่ชัดเจนเกี่ยวกับผลกระทบของภาวะโลกร้อนต่อพื้นที่เสี่ยงของประเทศไทย</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ค้นคว้าผลิตภัณฑ์ที่เป็นมิตรกับสิ่งแวดล้อม</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>สนับสนุนให้มีการพัฒนาการใช้พลังงานแสงอาทิตย์ ทั้งการสนับสนุนงบประมาณในการวิจัย และการพัฒนาระบบให้มีต้นทุนต่ำและคุ้มค่าในการใช้งาน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>เป็นผู้นำกระแสของสังคมเรื่องชีวิตที่พอเพียง</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>รวมกลุ่มสร้างตลาดผู้บริโภค-ผู้ผลิตโดยตรงในท้องถิ่น เพื่อลดกระบวนการขนส่งผ่านพ่อค้าคนกลาง</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 79,
+            "question_id": 167181,
+            "question_text": "<p>หลักการทรงงานใดของ ในหลวงรัชกาลที่ 9 ที่มีบทบาทสำคัญที่สุดในการช่วยอนุรักษ์ทรัพยากรธรรมชาติและสิ่งแวดล้อมอย่างยั่งยืน</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>ใช้อธรรมปราบอธรรม</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ไม่ติดตำรา</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>รู้จักประหยัด เรียบง่าย ได้ประโยชน์สูงสุด</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>ใช้ธรรมชาติช่วยธรรมชาติ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>ปลูกป่าในใจคน</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 80,
+            "question_id": 167182,
+            "question_text": "<p>ชื่อย่อคำว่า CITES ในความหมายของการอนุรักษ์ทรัพยากรธรรมชาติและสิ่งแวดล้อมคืออะไร</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>อนุสัญญาว่าด้วยการค้าระหว่างประเทศซึ่งชนิดพันธุ์สัตว์ป่าและพืชป่าที่ใกล้สูญพันธุ์</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>ความตกลงอาเซียนว่าด้วยมลพิษจากหมอกควันข้ามแดน</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>อนุสัญญาว่าด้วยการคุ้มครองมรดกโลกทางวัฒนธรรมและทางธรรมชาติ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>อนุสัญญาสหประชาชาติว่าด้วยการเปลี่ยนแปลงสภาพภูมิอากาศ</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>อนุสัญญาว่าด้วยกระบวนการแจ้งข้อมูลสารเคมีล่วงหน้าสำหรับสารเคมีอันตรายและสารเคมีป้องกันกำจัดศัตรูพืชและสัตว์บางชนิดในการค้าระหว่างประเทศ</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 81,
+            "question_id": 167183,
+            "question_text": "<p>ทิศทั้ง 6 หมายถึง บุคคล 6 ส่วน ที่เกี่ยวข้องกับตัวเราในสังคม และการดำเนินชีวิต ข้อใดต่อไปนี้ไม่สอดคล้องกันระหว่างทิศที่มีอุปการะต่อเราและแนวปฎิบัติต่อทิศนั้นๆ</p>\n\n<p>1. <strong>ทิศเบื้องหน้า</strong> (บิดามารดา ปู่ย่า ตายาย) ทิศที่มีอุปการะต่อเรา อบรมสั่งสอนไม่ให้ประพฤติชั่ว แนวปฎิบัติต่อทิศนั้นๆ คือ ใช้ทรัพย์ที่ท่านมอบให้อย่างรู้เห็นคุณค่า</p>\n\n<p>2. <strong>ทิศเบื้องขวา</strong> (ครูบาอาจารย์) ทิศที่มีอุปการะต่อเรา ฝึกฝนให้เป็นคนดี ไม่ประพฤติในความชั่ว แนวปฎิบัติต่อทิศนั้นๆ คือ มอบอาหาร และน้ำดื่มอย่างสม่ำเสมอ</p>\n\n<p>3. <strong>ทิศเบื้องล่าง</strong> (บริวารหรือผู้รับใช้) ทิศที่มีอุปการะต่อเรา เป็นผู้แสวงหาทรัพย์ และลาภมาสู่ตน แนวปฎิบัติต่อทิศนั้นๆ คือ ให้รางวัลเพื่อเป็นกำลังใจเป็นนิจ</p>\n\n<p>4. <strong>ทิศเบื้องซ้าย</strong> (มิตรสหาย) ทิศที่มีอุปการะต่อเราเป็นผู้คอยช่วยเหลือเกื้อกูลเรา แนวปฎิบัติต่อทิศนั้นๆ คือ ให้เกียรติซึ่งกันและกัน</p>\n\n<p>5. <strong>ทิศเบื้องบน</strong> (สามเณร ภิกษุ ภิกษุณี) ทิศที่มีอุปการะต่อเรา เป็นผู้ให้ข้อเสนอแนะแนวทางต่อความสำเร็จในการดำเนินชีวิต แนวปฎิบัติต่อทิศนั้นๆ คือให้ความเป็นมิตรที่จริงใจ</p>\n\n<p>ทั้งกาย วาจา และใจ</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>1 และ 4</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>2 และ 5</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>3 และ 5</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>2 และ 3</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>1 และ 2</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 82,
+            "question_id": 167184,
+            "question_text": "<p><strong>คุณสมบัติของผู้บวชในพระพุทธศาสนาได้กำหนดไว้ว่า บุคคลผู้ถูกห้ามอุปสมบทโดยเด็ดขาด</strong> ได้แก่บุคคลในข้อใดดังต่อไปนี้</p>\n\n<p>1. บัณเฑาะก์</p>\n\n<p>2. ปลอมบวช คือเอาผ้าเหลืองมาห่มเองโดยไม่มีพระอุปัชฌาย์</p>\n\n<p>3. ญาติพี่น้องไม่อนุญาต</p>\n\n<p>4. โจรผู้ร้ายคนที่ชอบลักขโมยของแต่ยังไม่ถูกดำเนินคดี</p>\n\n<p>5. คนมีฟันดังอสูร คือมีฟันล่างหรือฟันบนออกนอกปากบ้างเมื่อพูดเท่านั้นจึงปรากฏ เมื่อไม่พูดไม่ปรากฏ</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>1 และ 2</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>3 และ 5</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>1 และ 4</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>2 และ 5</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>4 และ 3</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 83,
+            "question_id": 167185,
+            "question_text": "<p>ข้อใดต่อไปนี้กล่าวถูกต้องเกี่ยวกับข้อแตกต่างระหว่างความผิดฐานกรรโชกและความผิดฐานชิงทรัพย์</p>\n\n<p>1. ความผิดฐานชิงทรัพย์จะเป็นความผิดสำเร็จเมื่อได้ครอบครองทรัพย์นั้นแล้ว</p>\n\n<p>2. ความผิดฐานชิงทรัพย์ทรัพย์ที่จะชิงจึงมีได้มีแต่เฉพาะสังหาริมทรัพย์เท่านั้น</p>\n\n<p>3. ความผิดฐานกรรโชกอาจจะเป็นการขู่เข็ญว่าจะใช้กำลังประทุษร้าย</p>\n\n<p>4. ความผิดฐานกรรโชกอาจกรรโชกเอาอสังหาริมทรัพย์เท่านั้น</p>\n\n<p>5. ความผิดฐานชิงทรัพย์จะต้องเป็นการใช้กำลังประทุษร้ายหรือข่มขืนใจให้ส่งมอบทรัพย์สินให้ในเวลาอื่นก็ได้</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>2 และ 3</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>1 และ 2</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>3 และ 5</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>4 และ 5</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>1 และ 3</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 84,
+            "question_id": 167186,
+            "question_text": "<p>ข้อใด<strong><u>มิใช่</u></strong>อำนาจหน้าที่ของศาลรัฐธรรมนูญ</p>\n\n<p>1. วินิจฉัยการพิจารณาไม่เคร่งครัดตามกฎหมายวิธีพิจารณาความอาญา</p>\n\n<p>2. วินิจฉัยคดีพิพาทเกี่ยวกับการกระทำละเมิดหรือความรับผิดชอบอย่างอื่นของหน่วยงานทางปกครอง หรือเจ้าหน้าที่ของรัฐ อันเกิดจากการใช้อำนาจตามกฎหมาย</p>\n\n<p>3. วินิจฉัยว่าสมาชิกภาพของสมาชิกสภาผู้แทนราษฎรหรือสมาชิกวุฒิสภาคนใดคนหนึ่งสิ้นสุดลง</p>\n\n<p>4. วินิจฉัยว่ากรรมการการเลือกตั้งคนใดคนหนึ่งขาดคุณสมบัติหรือมีลักษณะต้องห้าม หรือกระทำการอันต้องห้าม</p>\n\n<p>5. วินิจฉัยสั่งยุบพรรคการเมืองที่กระทำการใช้สิทธิและเสรีภาพตามรัฐธรรมนูญเพื่อล้มล้างการปกครองระบอบประชาธิปไตยอันมีพระมหากษัตริย์ทรงเป็นประมุขตามรัฐธรรมนูญ</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>2 และ 3</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>3 และ 5</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>1 และ 2</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>4 และ 5</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>2 และ 4</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 85,
+            "question_id": 167187,
+            "question_text": "<p>ท่านคิดว่าปัจจัยใดที่มีอิทธิพลทั้งต่ออุปสงค์และอุปทาน</p>\n\n<p>1. รสนิยมของผู้บริโภค</p>\n\n<p>2. ฤดูกาล</p>\n\n<p>3. ราคาสินค้าชนิดอื่น</p>\n\n<p>4. ต้นทุนการผลิต</p>\n\n<p>5. ภาษี</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>1 และ 5</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>3 และ 4</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>4 และ 5</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>3 และ 5</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>2 และ 3</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 86,
+            "question_id": 167188,
+            "question_text": "<p>ข้อใดถือว่าเป็นนโยบายการคลังของรัฐบาล</p>\n\n<p>1. แจกคูปองช้อปช่วยชาติสำหรับบัณฑิตไทยที่เพิ่งทำงานใหม่</p>\n\n<p>2. ให้หน่วยงานราชการสั่งวัสดุสำนักงานจากผู้ผลิตในไทย</p>\n\n<p>3. ลดภาษีให้ต่างประเทศที่มาตั้งฐานการผลิตในไทย</p>\n\n<p>4. ลดภาษีที่ดินและสิ่งปลูกสร้างให้คนที่ใกล้เกษียณอายุราชการ</p>\n\n<p>5. ลดภาษีสนามบินสำหรับนักท่องเที่ยวจากต่างประเทศที่เดินทางมาไทยครั้งที่สองในรอบหกเดือน</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>2 และ 4</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>3 และ 5</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>1 และ 3</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>4 และ 5</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>1 และ 5</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 87,
+            "question_id": 167189,
+            "question_text": "<p>ความรู้ทางด้านดาราศาสตร์เกิดจากการสังเกตปรากฏการณ์จากการเกิดน้ำท่วมของแม่น้ำ ซึ่งได้นำความรู้นี้มาคำนวณเป็นปฏิทินแบบสุริยคติที่แบ่งวันออกเป็น 365 วันใน 1 ปี ซึ่งมี 12 เดือน และการ<strong>ใช้ระบบฐาน </strong><strong>60 ซึ่งมีอิทธิพลต่อการแบ่งเวลาในปัจจุบัน (คือ 60 วินาที เป็น&nbsp;1 นาที 60 นาที เป็น 1 ชั่วโมง)</strong> นั้นมากจากอารยธรรมของยุคสมัยใด</p>\n\n<p>1. อารยธรรมลุ่มแม่น้ำไนล์</p>\n\n<p>2. อารยธรรมลุ่มแม่น้ำไทกรีส-ยูเฟรตีส</p>\n\n<p>3. อารยธรรมกรีก-โรมัน</p>\n\n<p>4. อารยธรรมลุ่มแม่น้ำฮวงโห</p>\n\n<p>5.อารยธรรมลุ่มแม่น้ำสินธุ</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>1 และ 3</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>1 และ 2</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>3 และ 5</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>2 และ 4</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>3 และ 4</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 88,
+            "question_id": 167190,
+            "question_text": "<p>เจ้าฟ้าพระองค์ใดในประวัติศาสตร์ชาติไทยที่มีความสำคัญต่อประชาชนในการที่ได้ทรงอุทิศพระองค์ในเรื่องของการแพทย์เพื่อช่วยเหลือคนไทยอย่างแท้จริง</p>\n\n<p>1. สมเด็จพระมหาสมณเจ้า กรมพระยาวชิรญาณวโรรส</p>\n\n<p>2. กรมพระราชวังบวรวิไชยชาญ</p>\n\n<p>3. พลเรือเอกพระเจ้าบรมวงศ์เธอกรมหลวงชุมพรเขตอุดมศักดิ์</p>\n\n<p>4. สมเด็จพระเจ้าบรมวงศ์เธอ เจ้าฟ้ากรมพระยานริศรานุวัดติวงศ์&nbsp;</p>\n\n<p>5. กรมหลวงสงขลานครินทร์</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>1 และ 4</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>3 และ 4</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>4 และ 5</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>3 และ 5</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>1 และ 5</p>",
+                    "is_correct": false
+                }
+            ]
+        },
+        {
+            "question_number": 89,
+            "question_id": 167191,
+            "question_text": "<p><strong>ออโรรา</strong> เป็นปรากฏการณ์ทางธรรมชาติ ที่มีแสงเรืองบนท้องฟ้าในเวลากลางคืนปรากฏการออโรราเป็นตัวอย่างปรากฏการณ์ทางฟิสิกส์ที่น่าทึงที่สุดที่เกิดขึ้นในอวกาศที่ใกล้พื้นโลก มันอาจปรากฏจากสิ่งจางๆ เป็นวงนิ่ง แล้วระเบิดออกมาเป็นสีต่าง ๆ พุ่งกระจายภายในเวลาไม่กี่วินาที บางครั้งจะปรากฏเหมือนมันจะแตะกับพื้น หรือในเวลาอื่นอาจเห็นมันพุ่งสูงขึ้นสู่ท้องฟ้า แต่ความจริงแล้ว แสงออโรรานั้นเกิดขึ้นที่ความสูงจากพื้นโลก (altitudes) ประมาณ 100 ถึง 300 กิโลเมตร บริเวณที่อยู่บริเวณบรรยากาศชั้นบนที่อยู่ใกล้กับอวกาศ ออโรราเรียกอีกอย่างหนึ่งว่า แสงเหนือ ตามประวัตินั้นมีชื่อมากมายหลายชื่อ ชื่อวิทยาศาสตร์ของปรากฏการณ์นี้ คือ ออโรรา บอเรลลีส (Aurora Borealis) ซึ่งเป็นภาษาละติน แปลเป็นภาษาไทยได้ว่า รุ่งอรุณสีแดงแห่งทิศเหนือ ซึ่งตั้งชื่อโดย กาลิเลโอ กาลิเลอิ (Galileo Galilei) (ค.ศ. 1564 &ndash; 1642) สิ่งที่กล่าวมาแล้วนั่นคือปรากฎการณ์ธรรมชาติที่เรียกว่า แสงเหนือ และคำตอบข้อใดต่อไปนี้ไม่ใช่ข้อสังเกตของการเกิดปรากฎการณ์นี้</p>\n\n<p>1. ปรากฏบ่อยครั้ง ตั้งแต่เวลา 19.00 น ถึง เที่ยงคืน</p>\n\n<p>2. จะสว่างจ้าในช่วง 27 วันที่ดวงอาทิตย์หันด้านแอคทีฟ (Active Area) มายังโลก</p>\n\n<p>3. ช่วงปลายฤดูใบไม้ร่วงจนถึงต้นฤดูใบไม้ผลิ ในเดือนตุลาคม กุมภาพันธ์ และ มีนาคม เป็นเดือนที่เหมาะสำหรับการชม</p>\n\n<p>4. จะปรากฏมากในแถบประเทศโซนอเมริกาเหนือ</p>\n\n<p>5. เมือง Andenes ประเทศนอร์เวย์พบความถี่ในการปรากฎเกือบทุกคืนที่ฟ้าโล่ง</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>2 และ 3</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>2 และ 5</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>4 และ 5</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>1 และ 3</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>1 และ 4</p>",
+                    "is_correct": true
+                }
+            ]
+        },
+        {
+            "question_number": 90,
+            "question_id": 167192,
+            "question_text": "<p>โครงการชั่งหัวมัน ตามพระราชดำริ&nbsp;ของในหลวงรัชกาลที่ 9 นั้น มีจุดมุ่งหมายใดที่มีความสำคัญที่สุด และสอดคล้องกับแนวทางการอนุรักษ์ทรัพยากรและสิ่งแวดล้อมเพื่อการพัฒนาที่ยั่งยืน</p>\n\n<p>1. เป็นแหล่งท่องเที่ยวที่มีชื่อเสียงในท้องถิ่นเพียงแห่งเดียว</p>\n\n<p>2. เป็นศูนย์รวมพืชเชิงเดี่ยว</p>\n\n<p>3. เป็นแหล่งสร้างอาชีพของกลุ่มแม่บ้านในชุมชน</p>\n\n<p>4. เป็นการพิสูจน์ว่าไม่ว่าพื้นที่จะแห้งแล้งสักเพียงใดก็สามารถพลิกฟื้นขึ้นมาได้</p>\n\n<p>5. เป็นการร่วมมือร่วมแรงกันในการทำงานและแลกเปลี่ยนความรู้ระหว่างชาวบ้านด้วยความเต็มใจ</p>",
+            "choices": [
+                {
+                    "choice_number": 1,
+                    "choice_text": "<p>2 และ 4</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 2,
+                    "choice_text": "<p>4 และ 5</p>",
+                    "is_correct": true
+                },
+                {
+                    "choice_number": 3,
+                    "choice_text": "<p>2 และ 3</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 4,
+                    "choice_text": "<p>1 และ 5</p>",
+                    "is_correct": false
+                },
+                {
+                    "choice_number": 5,
+                    "choice_text": "<p>3 และ 5</p>",
+                    "is_correct": false
+                }
+            ]
+        }
+    ]
+}

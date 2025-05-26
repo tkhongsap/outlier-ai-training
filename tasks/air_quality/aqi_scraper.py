@@ -1,240 +1,250 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+โปรแกรมดึงข้อมูลคุณภาพอากาศในประเทศไทยจาก aqi.in
+วิธีที่ 1: Web Scraping
+"""
+
 import requests
 from bs4 import BeautifulSoup
 import json
 import os
 from datetime import datetime
-import re
+import time
 
-# สร้างโฟลเดอร์สำหรับเก็บผลลัพธ์
-def สร้างโฟลเดอร์():
-    """
-    สร้างโฟลเดอร์ output ถ้ายังไม่มี
-    """
-    output_dir = "output"
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
-        print(f"สร้างโฟลเดอร์: {output_dir}")
-    return output_dir
-
-# ดึงข้อมูลคุณภาพอากาศจากเว็บไซต์
-def ดึงข้อมูลคุณภาพอากาศ():
-    """
-    ดึงข้อมูลคุณภาพอากาศจากเว็บไซต์ AQI.in
-    """
-    url = "https://www.aqi.in/dashboard/thailand"
-    
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-    }
-    
-    try:
-        response = requests.get(url, headers=headers)
+class AQIScraper:
+    def __init__(self):
+        self.base_url = "https://www.aqi.in/dashboard/thailand"
+        self.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
+        self.output_dir = "output"
         
-        if response.status_code == 200:
-            print("ดึงข้อมูลสำเร็จ")
+    def create_output_directory(self):
+        """สร้างโฟลเดอร์ output หากยังไม่มี"""
+        if not os.path.exists(self.output_dir):
+            os.makedirs(self.output_dir)
+            print(f"สร้างโฟลเดอร์ {self.output_dir} เรียบร้อยแล้ว")
+    
+    def fetch_page_content(self):
+        """ดึงข้อมูล HTML จากเว็บไซต์"""
+        try:
+            print("กำลังดึงข้อมูลจาก aqi.in...")
+            response = requests.get(self.base_url, headers=self.headers, timeout=30)
+            response.raise_for_status()
             return response.text
-        else:
-            print(f"เกิดข้อผิดพลาด: {response.status_code}")
+        except requests.RequestException as e:
+            print(f"เกิดข้อผิดพลาดในการดึงข้อมูล: {e}")
             return None
-    except Exception as e:
-        print(f"เกิดข้อผิดพลาด: {str(e)}")
-        return None
-
-# ทำความสะอาดข้อมูลตัวเลข
-def ทำความสะอาดข้อมูล(text):
-    """
-    ลบอักขระพิเศษและแปลงเป็นตัวเลข
-    """
-    if not text:
-        return None
     
-    # ลบอักขระพิเศษและเหลือเฉพาะตัวเลข
-    clean_text = re.sub(r'[^\d.]', '', text)
-    
-    try:
-        # แปลงเป็นตัวเลข
-        if '.' in clean_text:
-            return float(clean_text)
-        elif clean_text:
-            return int(clean_text)
-        else:
-            return None
-    except:
-        return None
-
-# แยกข้อมูลจาก HTML
-def แยกข้อมูล(html_content):
-    """
-    แยกข้อมูลคุณภาพอากาศจาก HTML
-    """
-    if not html_content:
-        return None
-    
-    soup = BeautifulSoup(html_content, 'html.parser')
-    
-    # เก็บข้อมูลคุณภาพอากาศโดยรวม
-    ข้อมูลทั่วไป = {}
-    
-    # ดึงข้อมูล AQI โดยรวม
-    try:
-        # ดึงค่า AQI จากตัวเลขใหญ่ที่แสดงในหน้าแรก
-        aqi_element = soup.find(text=re.compile(r'53', re.IGNORECASE))
-        if aqi_element and aqi_element.parent:
-            ข้อมูลทั่วไป["AQI"] = 53
+    def parse_air_quality_data(self, html_content):
+        """แยกข้อมูลคุณภาพอากาศจาก HTML"""
+        soup = BeautifulSoup(html_content, 'html.parser')
+        air_quality_data = {
+            "timestamp": datetime.now().isoformat(),
+            "country": "Thailand",
+            "data_source": "aqi.in",
+            "stations": []
+        }
         
-        # ดึงข้อมูล AQI category จากข้อความ "Moderate"
-        aqi_category = soup.find(text=re.compile(r'Moderate', re.IGNORECASE))
-        if aqi_category:
-            ข้อมูลทั่วไป["AQI_category"] = "Moderate"
-        
-        # ดึงข้อมูลอุณหภูมิจากตัวเลขที่มี °C
-        temp_element = soup.find(text=re.compile(r'32.*°C', re.IGNORECASE))
-        if temp_element:
-            ข้อมูลทั่วไป["temperature"] = "32 °C"
-        
-        # ดึงข้อมูลความชื้น
-        humidity_element = soup.find(text=re.compile(r'71\s*%', re.IGNORECASE))
-        if humidity_element:
-            ข้อมูลทั่วไป["humidity"] = "71%"
+        try:
+            # ค้นหาข้อมูลสถานีต่างๆ ในประเทศไทย
+            station_cards = soup.find_all('div', class_=['station-card', 'city-card', 'location-card'])
             
-        # ดึงข้อมูลลม
-        wind_element = soup.find(text=re.compile(r'5\s*km/h', re.IGNORECASE))
-        if wind_element:
-            ข้อมูลทั่วไป["wind_speed"] = "5 km/h"
+            if not station_cards:
+                # ลองหาด้วย pattern อื่น
+                station_cards = soup.find_all('div', attrs={'data-city': True})
+            
+            for card in station_cards:
+                station_data = self.extract_station_data(card)
+                if station_data:
+                    air_quality_data["stations"].append(station_data)
+            
+            # หากไม่พบข้อมูลจาก card ให้ลองหาจาก table
+            if not air_quality_data["stations"]:
+                table_data = self.extract_table_data(soup)
+                air_quality_data["stations"].extend(table_data)
+                
+        except Exception as e:
+            print(f"เกิดข้อผิดพลาดในการแยกข้อมูล: {e}")
         
-        # ดึงข้อมูล PM2.5
-        pm25_value = "11 μg/m³"
-        ข้อมูลทั่วไป["PM2.5"] = pm25_value
-        
-        # ดึงข้อมูล PM10
-        pm10_value = "20 μg/m³" 
-        ข้อมูลทั่วไป["PM10"] = pm10_value
-        
-        # ดึงข้อมูล O3
-        o3_value = "10 ppb"
-        ข้อมูลทั่วไป["O3"] = o3_value
-        
-        # ดึงข้อมูล NO2
-        no2_value = "46 ppb"
-        ข้อมูลทั่วไป["NO2"] = no2_value
-        
-        # ดึงข้อมูล SO2
-        so2_value = "2 ppb"
-        ข้อมูลทั่วไป["SO2"] = so2_value
-        
-        # ดึงข้อมูล CO
-        co_value = "72 ppb"
-        ข้อมูลทั่วไป["CO"] = co_value
-        
-    except Exception as e:
-        print(f"เกิดข้อผิดพลาดในการดึงข้อมูลทั่วไป: {str(e)}")
+        return air_quality_data
     
-    # เก็บข้อมูลเมืองต่างๆ
-    ข้อมูลเมือง = []
+    def extract_station_data(self, card):
+        """แยกข้อมูลจากการ์ดของแต่ละสถานี"""
+        try:
+            station_info = {}
+            
+            # ชื่อสถานี
+            name_elem = card.find(['h3', 'h4', 'h5', 'div'], class_=['city-name', 'station-name', 'location-name'])
+            if name_elem:
+                station_info['station_name'] = name_elem.get_text(strip=True)
+            
+            # AQI
+            aqi_elem = card.find(['span', 'div'], class_=['aqi-value', 'aqi-number'])
+            if aqi_elem:
+                try:
+                    station_info['AQI'] = int(aqi_elem.get_text(strip=True))
+                except ValueError:
+                    station_info['AQI'] = None
+            
+            # PM2.5
+            pm25_elem = card.find(text=lambda text: text and 'PM2.5' in text)
+            if pm25_elem:
+                pm25_value = self.extract_numeric_value(pm25_elem.parent)
+                station_info['PM2.5'] = pm25_value
+            
+            # PM10
+            pm10_elem = card.find(text=lambda text: text and 'PM10' in text)
+            if pm10_elem:
+                pm10_value = self.extract_numeric_value(pm10_elem.parent)
+                station_info['PM10'] = pm10_value
+            
+            # O3 (โอโซน)
+            o3_elem = card.find(text=lambda text: text and 'O3' in text)
+            if o3_elem:
+                o3_value = self.extract_numeric_value(o3_elem.parent)
+                station_info['O3'] = o3_value
+            
+            return station_info if len(station_info) > 1 else None
+            
+        except Exception as e:
+            print(f"เกิดข้อผิดพลาดในการแยกข้อมูลสถานี: {e}")
+            return None
     
-    # เพิ่มเมืองจากภาพ
-    try:
-        ข้อมูลเมือง.append({
-            "เมือง": "Bangkok Yai",
-            "AQI": 66,
-            "rank": 1,
-            "status": "polluted"
-        })
+    def extract_table_data(self, soup):
+        """แยกข้อมูลจากตาราง"""
+        stations = []
+        try:
+            tables = soup.find_all('table')
+            for table in tables:
+                rows = table.find_all('tr')
+                for row in rows[1:]:  # ข้าม header row
+                    cells = row.find_all(['td', 'th'])
+                    if len(cells) >= 3:
+                        station_data = {
+                            'station_name': cells[0].get_text(strip=True),
+                            'AQI': self.safe_int_convert(cells[1].get_text(strip=True)),
+                            'PM2.5': self.safe_float_convert(cells[2].get_text(strip=True)) if len(cells) > 2 else None,
+                            'PM10': self.safe_float_convert(cells[3].get_text(strip=True)) if len(cells) > 3 else None,
+                            'O3': self.safe_float_convert(cells[4].get_text(strip=True)) if len(cells) > 4 else None
+                        }
+                        stations.append(station_data)
+        except Exception as e:
+            print(f"เกิดข้อผิดพลาดในการแยกข้อมูลจากตาราง: {e}")
         
-        ข้อมูลเมือง.append({
-            "เมือง": "Surin",
-            "AQI": 66,
-            "rank": 2,
-            "status": "polluted"
-        })
-        
-        ข้อมูลเมือง.append({
-            "เมือง": "Don Mueang",
-            "AQI": 62,
-            "rank": 3,
-            "status": "polluted"
-        })
-        
-        ข้อมูลเมือง.append({
-            "เมือง": "Nakhon Ratchasima",
-            "AQI": 60,
-            "rank": 4,
-            "status": "polluted"
-        })
-        
-        ข้อมูลเมือง.append({
-            "เมือง": "Udon Thani",
-            "AQI": 58,
-            "rank": 5,
-            "status": "polluted"
-        })
-    except Exception as e:
-        print(f"เกิดข้อผิดพลาดในการเพิ่มข้อมูลเมือง: {str(e)}")
+        return stations
     
-    # รวมข้อมูลทั้งหมด
-    ข้อมูลทั้งหมด = {
-        "ข้อมูลทั่วไป": ข้อมูลทั่วไป,
-        "ข้อมูลเมือง": ข้อมูลเมือง,
-        "เวลาอัปเดต": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    }
+    def extract_numeric_value(self, element):
+        """แยกค่าตัวเลขจาก element"""
+        try:
+            text = element.get_text(strip=True)
+            # หาตัวเลขในข้อความ
+            import re
+            numbers = re.findall(r'\d+\.?\d*', text)
+            return float(numbers[0]) if numbers else None
+        except:
+            return None
     
-    return ข้อมูลทั้งหมด
+    def safe_int_convert(self, value):
+        """แปลงค่าเป็น int อย่างปลอดภัย"""
+        try:
+            return int(float(value.replace(',', '').strip()))
+        except:
+            return None
+    
+    def safe_float_convert(self, value):
+        """แปลงค่าเป็น float อย่างปลอดภัย"""
+        try:
+            return float(value.replace(',', '').strip())
+        except:
+            return None
+    
+    def save_to_json(self, data, filename="air_quality_data.json"):
+        """บันทึกข้อมูลลงไฟล์ JSON"""
+        filepath = os.path.join(self.output_dir, filename)
+        try:
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            print(f"บันทึกข้อมูลลงไฟล์ {filepath} เรียบร้อยแล้ว")
+            return True
+        except Exception as e:
+            print(f"เกิดข้อผิดพลาดในการบันทึกไฟล์: {e}")
+            return False
+    
+    def get_thailand_summary(self, data):
+        """สรุปข้อมูลคุณภาพอากาศของประเทศไทย"""
+        if not data.get('stations'):
+            return None
+        
+        stations = data['stations']
+        summary = {
+            "timestamp": data['timestamp'],
+            "country": "Thailand",
+            "total_stations": len(stations),
+            "average_AQI": None,
+            "average_PM2.5": None,
+            "average_PM10": None,
+            "average_O3": None,
+            "stations_data": stations
+        }
+        
+        # คำนวณค่าเฉลี่ย
+        aqi_values = [s['AQI'] for s in stations if s.get('AQI') is not None]
+        pm25_values = [s['PM2.5'] for s in stations if s.get('PM2.5') is not None]
+        pm10_values = [s['PM10'] for s in stations if s.get('PM10') is not None]
+        o3_values = [s['O3'] for s in stations if s.get('O3') is not None]
+        
+        if aqi_values:
+            summary['average_AQI'] = round(sum(aqi_values) / len(aqi_values), 1)
+        if pm25_values:
+            summary['average_PM2.5'] = round(sum(pm25_values) / len(pm25_values), 1)
+        if pm10_values:
+            summary['average_PM10'] = round(sum(pm10_values) / len(pm10_values), 1)
+        if o3_values:
+            summary['average_O3'] = round(sum(o3_values) / len(o3_values), 1)
+        
+        return summary
+    
+    def run(self):
+        """เรียกใช้งานโปรแกรมหลัก"""
+        print("=== โปรแกรมดึงข้อมูลคุณภาพอากาศในประเทศไทย (Web Scraping) ===")
+        
+        # สร้างโฟลเดอร์ output
+        self.create_output_directory()
+        
+        # ดึงข้อมูลจากเว็บไซต์
+        html_content = self.fetch_page_content()
+        if not html_content:
+            print("ไม่สามารถดึงข้อมูลจากเว็บไซต์ได้")
+            return False
+        
+        # แยกข้อมูลคุณภาพอากาศ
+        air_quality_data = self.parse_air_quality_data(html_content)
+        
+        # สรุปข้อมูลประเทศไทย
+        thailand_summary = self.get_thailand_summary(air_quality_data)
+        
+        if thailand_summary and thailand_summary['total_stations'] > 0:
+            # บันทึกข้อมูลลงไฟล์
+            success = self.save_to_json(thailand_summary)
+            
+            if success:
+                print("\n=== สรุปข้อมูลคุณภาพอากาศในประเทศไทย ===")
+                print(f"จำนวนสถานีตรวจวัด: {thailand_summary['total_stations']} สถานี")
+                print(f"AQI เฉลี่ย: {thailand_summary['average_AQI']}")
+                print(f"PM2.5 เฉลี่ย: {thailand_summary['average_PM2.5']} μg/m³")
+                print(f"PM10 เฉลี่ย: {thailand_summary['average_PM10']} μg/m³")
+                print(f"O3 เฉลี่ย: {thailand_summary['average_O3']} μg/m³")
+                print(f"เวลาที่ดึงข้อมูล: {thailand_summary['timestamp']}")
+                return True
+        else:
+            print("ไม่พบข้อมูลคุณภาพอากาศในประเทศไทย")
+            return False
 
-# บันทึกข้อมูลเป็นไฟล์ JSON
-def บันทึกข้อมูล(ข้อมูล):
-    """
-    บันทึกข้อมูลเป็นไฟล์ JSON
-    """
-    if not ข้อมูล:
-        print("ไม่มีข้อมูลที่จะบันทึก")
-        return
-    
-    # สร้างโฟลเดอร์ output
-    output_dir = สร้างโฟลเดอร์()
-    
-    # สร้างชื่อไฟล์พร้อมวันที่และเวลา
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"air_quality_data_{timestamp}.json"
-    filepath = os.path.join(output_dir, filename)
-    
-    # บันทึกข้อมูลลงไฟล์ JSON
-    try:
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(ข้อมูล, f, indent=4, ensure_ascii=False)
-        print(f"บันทึกข้อมูลลงไฟล์ {filepath} สำเร็จ")
-        
-        # บันทึกข้อมูลล่าสุดแยกอีกไฟล์
-        latest_filepath = os.path.join(output_dir, "air_quality_latest.json")
-        with open(latest_filepath, 'w', encoding='utf-8') as f:
-            json.dump(ข้อมูล, f, indent=4, ensure_ascii=False)
-        print(f"บันทึกข้อมูลล่าสุดลงไฟล์ {latest_filepath} สำเร็จ")
-        
-        return filepath
-    except Exception as e:
-        print(f"เกิดข้อผิดพลาดในการบันทึกข้อมูล: {str(e)}")
-        return None
-
-# ฟังก์ชันหลัก
 def main():
-    """
-    ฟังก์ชันหลักสำหรับการทำงาน
-    """
-    print(f"เริ่มดึงข้อมูลคุณภาพอากาศเวลา {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    
-    # ดึงข้อมูลจากเว็บไซต์
-    html_content = ดึงข้อมูลคุณภาพอากาศ()
-    
-    # แยกข้อมูลจาก HTML
-    ข้อมูล = แยกข้อมูล(html_content)
-    
-    if ข้อมูล:
-        print(f"ได้ข้อมูลคุณภาพอากาศทั่วไป {len(ข้อมูล['ข้อมูลทั่วไป'])} รายการ")
-        print(f"ได้ข้อมูลคุณภาพอากาศเมือง {len(ข้อมูล['ข้อมูลเมือง'])} เมือง")
-        
-        # บันทึกข้อมูลเป็นไฟล์ JSON
-        บันทึกข้อมูล(ข้อมูล)
-    else:
-        print("ไม่พบข้อมูลคุณภาพอากาศ")
+    scraper = AQIScraper()
+    scraper.run()
 
 if __name__ == "__main__":
     main() 

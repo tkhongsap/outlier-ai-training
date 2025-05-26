@@ -1,0 +1,192 @@
+{
+  "timestamp": "2025-05-23T13:22:24.507403",
+  "country": "Thailand",
+  "data_source": "WAQI API",
+  "total_stations": 9,
+  "average_AQI": 30.0,
+  "average_PM2.5": 17.0,
+  "average_PM10": 4.0,
+  "average_O3": 29.7,
+  "stations_data": [
+    {
+      "city": "Bangkok",
+      "station_name": "Shanghai (上海)",
+      "AQI": 30,
+      "timestamp": "2025-05-23 13:00:00",
+      "coordinates": {
+        "latitude": 31.2047372,
+        "longitude": 121.4489017
+      },
+      "PM2.5": 17,
+      "PM10": 4,
+      "O3": 29.7,
+      "CO": 3.7,
+      "NO2": 11.5,
+      "SO2": 4.1,
+      "temperature": 21,
+      "humidity": 94,
+      "pressure": 1003,
+      "wind": 4.6
+    },
+    {
+      "city": "Chiang Mai",
+      "station_name": "Shanghai (上海)",
+      "AQI": 30,
+      "timestamp": "2025-05-23 13:00:00",
+      "coordinates": {
+        "latitude": 31.2047372,
+        "longitude": 121.4489017
+      },
+      "PM2.5": 17,
+      "PM10": 4,
+      "O3": 29.7,
+      "CO": 3.7,
+      "NO2": 11.5,
+      "SO2": 4.1,
+      "temperature": 21,
+      "humidity": 94,
+      "pressure": 1003,
+      "wind": 4.6
+    },
+    {
+      "city": "Phuket",
+      "station_name": "Shanghai (上海)",
+      "AQI": 30,
+      "timestamp": "2025-05-23 13:00:00",
+      "coordinates": {
+        "latitude": 31.2047372,
+        "longitude": 121.4489017
+      },
+      "PM2.5": 17,
+      "PM10": 4,
+      "O3": 29.7,
+      "CO": 3.7,
+      "NO2": 11.5,
+      "SO2": 4.1,
+      "temperature": 21,
+      "humidity": 94,
+      "pressure": 1003,
+      "wind": 4.6
+    },
+    {
+      "city": "Khon Kaen",
+      "station_name": "Shanghai (上海)",
+      "AQI": 30,
+      "timestamp": "2025-05-23 13:00:00",
+      "coordinates": {
+        "latitude": 31.2047372,
+        "longitude": 121.4489017
+      },
+      "PM2.5": 17,
+      "PM10": 4,
+      "O3": 29.7,
+      "CO": 3.7,
+      "NO2": 11.5,
+      "SO2": 4.1,
+      "temperature": 21,
+      "humidity": 94,
+      "pressure": 1003,
+      "wind": 4.6
+    },
+    {
+      "city": "Nakhon Ratchasima",
+      "station_name": "Shanghai (上海)",
+      "AQI": 30,
+      "timestamp": "2025-05-23 13:00:00",
+      "coordinates": {
+        "latitude": 31.2047372,
+        "longitude": 121.4489017
+      },
+      "PM2.5": 17,
+      "PM10": 4,
+      "O3": 29.7,
+      "CO": 3.7,
+      "NO2": 11.5,
+      "SO2": 4.1,
+      "temperature": 21,
+      "humidity": 94,
+      "pressure": 1003,
+      "wind": 4.6
+    },
+    {
+      "city": "Hat Yai",
+      "station_name": "Shanghai (上海)",
+      "AQI": 30,
+      "timestamp": "2025-05-23 13:00:00",
+      "coordinates": {
+        "latitude": 31.2047372,
+        "longitude": 121.4489017
+      },
+      "PM2.5": 17,
+      "PM10": 4,
+      "O3": 29.7,
+      "CO": 3.7,
+      "NO2": 11.5,
+      "SO2": 4.1,
+      "temperature": 21,
+      "humidity": 94,
+      "pressure": 1003,
+      "wind": 4.6
+    },
+    {
+      "city": "Udon Thani",
+      "station_name": "Shanghai (上海)",
+      "AQI": 30,
+      "timestamp": "2025-05-23 13:00:00",
+      "coordinates": {
+        "latitude": 31.2047372,
+        "longitude": 121.4489017
+      },
+      "PM2.5": 17,
+      "PM10": 4,
+      "O3": 29.7,
+      "CO": 3.7,
+      "NO2": 11.5,
+      "SO2": 4.1,
+      "temperature": 21,
+      "humidity": 94,
+      "pressure": 1003,
+      "wind": 4.6
+    },
+    {
+      "city": "Rayong",
+      "station_name": "Shanghai (上海)",
+      "AQI": 30,
+      "timestamp": "2025-05-23 13:00:00",
+      "coordinates": {
+        "latitude": 31.2047372,
+        "longitude": 121.4489017
+      },
+      "PM2.5": 17,
+      "PM10": 4,
+      "O3": 29.7,
+      "CO": 3.7,
+      "NO2": 11.5,
+      "SO2": 4.1,
+      "temperature": 21,
+      "humidity": 94,
+      "pressure": 1003,
+      "wind": 4.6
+    },
+    {
+      "city": "Samut Prakan",
+      "station_name": "Shanghai (上海)",
+      "AQI": 30,
+      "timestamp": "2025-05-23 13:00:00",
+      "coordinates": {
+        "latitude": 31.2047372,
+        "longitude": 121.4489017
+      },
+      "PM2.5": 17,
+      "PM10": 4,
+      "O3": 29.7,
+      "CO": 3.7,
+      "NO2": 11.5,
+      "SO2": 4.1,
+      "temperature": 21,
+      "humidity": 94,
+      "pressure": 1003,
+      "wind": 4.6
+    }
+  ]
+}
